@@ -1,2 +1,2 @@
-# RollingMovies
-A full responsive Movie website for RollingCode 
+# RollingGames
+A full responsive Game website for RollingCode 
