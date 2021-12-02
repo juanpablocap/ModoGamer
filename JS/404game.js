@@ -1,6 +1,6 @@
 let canvas = document.getElementById("game404");
 let container = document.getElementById("touch");
-let tch = new Hammer(container);
+
 
 let ctx = canvas.getContext("2d");
 let x = canvas.width / 2;
@@ -32,13 +32,13 @@ for (c = 0; c < brickColumnCount; c++) {
     bricks[c][r] = { x: 0, y: 0, status: 1 };
   }
 }
-let touches = [];
+
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 function keyDownHandler(event) {
-  if (event.keyCode || touches === 39) {
+  if (event.keyCode  === 39) {
     rigthPress = true;
-  } else if (event.keyCode || touches === 37) {
+  } else if (event.keyCode === 37) {
     leftPress = true;
   }
 }
@@ -162,7 +162,6 @@ function gameWon() {
     clearInterval(inter);}
 
 }
-
 
 
 function again() {

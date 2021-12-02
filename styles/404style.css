@@ -42,13 +42,19 @@ h2:hover{
     transform: scale(1.5);
 
 }
-.panda.hover{
+.panda:hover{
     transform: scale(1.5);
     cursor: pointer;
 }
+p{
+    font-size: 0.9em;
+}
+
 @media (max-width: 425px) {
     h1{
         font-size: 3em;
     }
-    
+    .arrows{
+        display: none;
+    }
 }
