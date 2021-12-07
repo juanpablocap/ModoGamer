@@ -30,13 +30,15 @@ class User {
     let email = document.querySelector('#email').value;
     let pass = document.getElementById('pass').value;
     let usersLS = localStorage.getItem('users');
+
     const usersLSConvertido = JSON.parse(usersLS)
     let userLogged = usersLSConvertido.find(user => user.email === email);
+    // chequeamos si la clave es correcta
     if (userLogged && userLogged.password == pass) {
       window.location.assign(window.location.origin + '/main.html');
     } else {
       let dataError = document.createElement('div');
-      dataError.innerText = 'Los datos ingresados no son correctos';
+      dataError.innerText = 'Algun dato no es correcto, intenta de nuevo!';
       dataError.classList.add('alert', 'alert-danger', 'mt-3');
       let form = document.querySelector('form');
       form.appendChild(dataError);
@@ -56,7 +58,7 @@ class User {
   
     let nameOk = /^[A-Z]+$/i.test(name); //true
     let lastnameOk = /^[A-Z]+$/i.test(lastname); //true
-    let passwordOk = /^[A-Z](?=\w*\d)(?=\w*[a-z])\S{8,16}/.test(password);
+    let passwordOk = /^[A-Z](?=\w*\d)(?=\w*[a-z])\S{8,12}/.test(password); //password de 8 a 12 caracteres
     let emailOk = /([a-z]\w+@[a-z]+\.[a-z]{2,5})/.test(email);
     
   
@@ -88,3 +90,7 @@ class User {
     }
   }
   
+  cheking(User)=> {
+    let eMail = document.getElementById('email');
+    eMail.classList.add('alert', 'alert-danger');
+  }
