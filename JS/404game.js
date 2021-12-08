@@ -1,7 +1,9 @@
+//Comenzamos llamando todas las variables necesarias
 let canvas = document.getElementById("game404");
 let container = document.getElementById("touch");
 
-
+//vamos creando las que utilizaremos para ir dibujando sobre canvas
+//generales y pelota
 let ctx = canvas.getContext("2d");
 let x = canvas.width / 2;
 let y = canvas.height - 30;
@@ -9,14 +11,16 @@ let dx = 2;
 let dy = -2;
 const bRadius = 10;
 let randomColor = "#0095DD";
+//paleta para jugar
 let paddleHeight = 10;
 let paddleWidth = 75;
 let paddleX = (canvas.width - paddleWidth) / 2;
-
+//movimiento de paleta
 let rigthPress = false;
 let leftPress = false;
 let user = "Juan"
 let score = 0;
+//ladrillos 
 let brickRowCount = 3;
 let brickColumnCount = 5;
 let brickWidth = 50;
@@ -32,7 +36,8 @@ for (c = 0; c < brickColumnCount; c++) {
     bricks[c][r] = { x: 0, y: 0, status: 1 };
   }
 }
-
+//Creamos las funciones que usaremos para mover la paleta,
+// tanto en teclado como en pantalla por touch.
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 function keyDownHandler(event) {
@@ -60,7 +65,7 @@ function movex(e) {
   }
      
 }
-  
+// Comenzamos las funciones que van a dibujar los elementos y la funcionalidad del juego.
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, bRadius, 0, Math.PI * 2);
@@ -114,7 +119,7 @@ function collisionDetect() {
     }
   }
 }
-
+//Funcion principal, que debera ser llamada  para que comienze el juego.
 function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
@@ -171,5 +176,7 @@ function again() {
 function colorChange() {
   randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
 }
-
+//Con el setinterval damos inicio a la funcion, y  para la 
+//velocidad del mismo. Se va a dibujar un nuevo canvas con las nuevas posiciones de los
+//elementos cada ese intervalo.
 let inter = setInterval(draw, 60);
