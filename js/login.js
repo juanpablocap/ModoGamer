@@ -90,7 +90,3 @@ class User {
     }
   }
   
-  cheking(User)=> {
-    let eMail = document.getElementById('email');
-    eMail.classList.add('alert', 'alert-danger');
-  }
