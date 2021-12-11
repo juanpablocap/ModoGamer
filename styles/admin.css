@@ -1,3 +1,57 @@
-.fondo{
-    background-color: black;
+body{
+    font-family: 'Righteous', cursive;  
+    height: 100%;
+    background: url(/IMAGENES/imgGames/Fondo2.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
 }
+tr {
+    border-color: brown;
+}
+img{
+    width: 70%;
+}
+
+.tableOpacity{
+    background-color: rgba(0, 0, 0, 0.897);
+    color: rgba(240, 240, 240, 0.568);
+    border-radius: 0.5%;
+}
+.tablaColorText :hover{
+    color: white;
+}
+.paddingTr{
+    padding: 15px;
+}
+.imgJuego{
+    border-radius: 25%;
+    border-style: solid;
+    border-color: gray;
+}
+.modal textarea {
+    resize: none;
+}
+.btnNuevo{
+    color: yellow;
+    background: black;
+    border-color: yellow;
+    opacity: 98%;
+}
+.btnNuevo:hover{
+    background: yellow;
+    color: black;
+    opacity: 100%;
+    position: relative;
+    transition: 500ms;
+    transform: rotate(6deg) scale(1.4);
+}
+
+@media only all and (max-width: 992px) {
+    .trTabla {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+    .btnOpciones{
+        display: flex;
+        flex-direction: row;
+    }
+  }
