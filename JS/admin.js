@@ -216,9 +216,15 @@ function eliminarJuego(id) {
                     gamesLS.splice(cont, 1);
                     data = JSON.stringify(gamesLS);
                     localStorage.setItem("games", data);
-                    //Swal.fire("Juego eliminado", "", "success");
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'success',
+                        title: 'Juego eliminado',
+                        showConfirmButton: false,
+                        timer: 1150
+                    });    
                 }
-                window.location.assign(window.location.origin + "/admin.html");
+                //window.location.assign(window.location.origin + "/admin.html");
             });
                      
         }
@@ -265,7 +271,13 @@ function publicado(id) {
                         let btnP = document.getElementById("btnPublicado"+id);
                         btnP.className = "btn btn-primary";
 
-                        Swal.fire("Juego publicado!", "", "success");         
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Juego publicado',
+                            showConfirmButton: false,
+                            timer: 1150
+                        });         
                     }
                 });
             } else {
@@ -283,7 +295,13 @@ function publicado(id) {
                         let btnP = document.getElementById("btnPublicado"+id);
                         btnP.className = "btn btn-danger";
 
-                        Swal.fire("Juego sin publicar!", "", "warning");                      
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'warning',
+                            title: 'Juego sin publicar',
+                            showConfirmButton: false,
+                            timer: 1150
+                        });                      
                     }
                 });
             }
