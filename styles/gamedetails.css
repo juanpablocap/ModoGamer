@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+section{
+    background-color: rgb(238, 236, 236)
+}
+.btn{
+    background: none;
+    border: none;
+    padding: 0
+}
+.header{
+    
+    
+    
+    background-position: top;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover ;
+    
+    z-index: -1;
+
+
+    
+}
+
+.body-total{ 
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    
+}
+
+
+.header-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px 15px 12px 15px;
+    
+}
+.header-logo-img{
+    max-width: 250px;
+    max-height: 125px;
+    margin-bottom: 12px;
+}
+.purchase-button{
+    width: 200px;
+    padding: 10px;
+    margin-top: 12px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+}
+.purchase-button:focus,.purchase-button:hover{
+    background-color: blueviolet;
+    border: none;
+    border-color: #a89cc8;
+    box-shadow: #a89cc8;
+
+}
+#carousel{
+    background-color: rgb(238, 236, 236);
+    padding: 10px 0px;
+    
+}
+#main{
+    max-width: 1000px;
+    
+    
+    
+    
+}
+.glider{
+   
+    width: 100%;
+    overflow: hidden;
+    display: block;
+
+}
+.glider-element{
+    margin: 0 5px;
+    width: 100%;
+    
+    
+}
+
+
+.modal-dialog{
+    min-width: 100%;
+    background-color:rgba(2, 2, 2, 0.5) 
+   
+    
+}
+.modal-header, .modal-content{
+    background-color:rgba(2, 2, 2, 0);
+    border: none;
+}
+.btn-close:hover{
+    background-color:red;
+    color: #fff;
+    font-weight: 500px;
+}
+.modal-body{
+    padding: 0;
+}
+    
+.glider-dot{ background-color: #a89cc8;
+    
+}
+.glider-dot.active{ background-color: blueviolet}
+.glider-contain{
+    position: relative;
+    max-height: 250px;
+    
+    
+    
+    
+}
+.gameplay{
+    text-align: left;
+    color: rgb(10, 10, 10);
+}
+.gameplay > p{
+    margin-top:  0;
+}
+.body-img-1{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(2, 2, 2, 0.5);
+    
+    
+}
+.body-img-1 > img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.text1{
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: 300;
+    
+    
+}
+.text2{
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.text3{
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    z-index: 1;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+p{
+    margin-top: 0;
+}
+h3{
+    font-size: 36px;
+    margin-top: 0;
+}
+.resume_body{
+    background-color: #fff;
+    width:95%;
+    height: 98%;
+    margin: 0 5px;
+}
+.resume_title{
+    padding: 0 0 0 5px;
+    width: 100%;
+    text-align: left;
+}
+@media (min-width: 768px){
+    
+    .header-resume{
+        max-width: 450px;
+    }
+    .text1, .text2, .text3{
+        width: 450px;
+
+    }
+    .glider-dots{ 
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 775px){
+    .header-body{
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    
+    .header-resume{
+        max-width: 300px;
+
+
+    }
+    .text1, .text2, .text3{
+        width: 450px;
+
+    }
+    .text2{
+        text-align: end;
+        left: 70%;
+    }
+    .text3{
+        left: 30%;
+        top: 70%;
+        text-align: left;
+    }
+    .glider-dots{ 
+        margin-bottom: 5px;
+    }
+}
