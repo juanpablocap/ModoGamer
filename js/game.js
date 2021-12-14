@@ -14,3 +14,4 @@ paginaDetalle.innerHTML = `
 `;
 let padre = document.getElementById('padre');
 padre.appendChild(paginaDetalle);
+

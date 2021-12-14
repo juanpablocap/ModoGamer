@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <meta name="description" content="Proyecto para rollingcode school, website de video juegos.">
     <meta name="keywords" content="games, video juegos, playstation, diversion, xbox, steam, modogamer"/>
     <title>Modo Gamer</title>
@@ -31,10 +30,10 @@
                         <a href="main.html">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About us</a>
+                        <a href="admin.html">Admin</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contacto</a>
+                        <a href="cart.html">Carrito</a>
                     </li>
                     <li><a href="logout.html">Logout</a></li>
                 </ul>
@@ -55,69 +54,8 @@
 
 <!-- news cards 1-->
 <div class="news-cards">
-    <div>
-        <img src="img/battle.jpg" alt="Juego 1">
-        <h3>Battle</h3>
-        <p>The Riftbreakerns to survive</p>
-    </div>
-    <div>
-        <img src="img/fifa.jpg" alt="juego 2">
-        <h3>Fifa2022</h3>
-    </div>
-    <div>
-        <img src="img/robo.jpg" alt="Juego 3">
-        <h3>Robo Recall</h3>
-        <p>ed version of the real-time strategy classic.</p>
-    </div>
-    <div>
-        <img src="img/shadow.jpg" alt="juego 4">
-        <h3>Shadow</h3>
-        <p>ed version of the real-time strategy classic </p>
-    </div>
-    <div>
-        <img src="img/battle.jpg" alt="Juego 1">
-        <h3>Battle</h3>
-        <p>ed version of the real-time strategy classic</p>
-    </div>
-    <div>
-        <img src="img/fifa.jpg" alt="juego 2">
-        <h3>Fifa2022</h3>
-        <p>ed version of the real-time strategy classic</p>
-
-    </div>
-    <div>
-        <img src="img/robo.jpg" alt="Juego 3">
-        <h3>Robo Recall</h3>
-        <p>ed version of the real-time strategy classic.</p>
-    </div>
-    <div>
-        <img src="img/robo.jpg" alt="Juego 3">
-        <h3>Robo Recall</h3>
-        <p>ed version of the real-time strategy classic.</p>
-    </div>
-    <div>
-        <img src="img/battle.jpg" alt="Juego 1">
-        <h3>Battle</h3>
-        <p>The Riftbreakerns to survive</p>
-    </div>
-    <div>
-        <img src="img/robo.jpg" alt="Juego 3">
-        <h3>Robo Recall</h3>
-        <p>ed version of the real-time strategy classic.</p>
-    </div>
-    <div>
-        <img src="img/battle.jpg" alt="Juego 1">
-        <h3>Battle</h3>
-        <p>The Riftbreakerns to survive</p>
-    </div>
-    <div>
-        <img src="img/robo.jpg" alt="Juego 3">
-        <h3>Robo Recall</h3>
-        <p>ed version of the real-time strategy classic.</p>
-    </div>
-    
+<!-- carga dinamica de juegos-->
 </div>
-<!-- -->
 
 <!-- Social , los iconos los saca de fontawesome-->
 <section class="social">
@@ -174,15 +112,16 @@
 <footer class="footer">
     <h3>Modogamer &copy Argentina - 2021 // Diseño y desarrollo por Undefined</h3>
 </footer>
-<!-- scrollreveal script-->
+
 <script>
     document.querySelector('.menu-btn').addEventListener('click',() => {
     document.querySelector('.nav-menu').classList.toggle('show')
 }); 
+//-- scrollreveal script-->
     ScrollReveal().reveal('.showcase'); 
     ScrollReveal().reveal('.news-cards' ,{ delay: 500}); 
     ScrollReveal().reveal('.cards-banner-one' ,{ delay: 500}); 
 </script>   
-<script src="/js/games.js"></script>
+<script src="/js/show.js"></script>
 </body>
 </html>

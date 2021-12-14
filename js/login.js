@@ -18,12 +18,11 @@ class User {
   ]
   
   if (!localStorage.getItem('users')) {
-    console.log('Avisame');
     let usersJSON = JSON.stringify(users); //Convertimos users a JSON
     localStorage.setItem('users', usersJSON);
   }
   
-  //* LOGIN
+  // LOGIN
   
   function loginCheck(event) {
     event.preventDefault();
