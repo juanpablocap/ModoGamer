@@ -24,7 +24,7 @@
                     <h2 class="text-white">Admin de productos</h2>
                 </div>
                 <div class="m-3">
-                    <button onclick="limpiarCamposModal()" data-bs-toggle="modal" data-bs-target="#adminModal" class="btnNuevo btn">Nuevo</button>
+                    <button onclick="limpiarCamposModal()" onblur data-bs-toggle="modal" data-bs-target="#adminModal" class="btn btnNuevo">Nuevo</button>
                 </div>
             </section>
             <section>
@@ -68,15 +68,7 @@
 
             <table class="table text-center container tableOpacity" id="tablaAdminJuegos">
                 <tbody id="cuerpoTabla" class="container tablaColorText">
-                    <!--<tr id="tabla" class="row tablaColorText">
-                         <th class="col-sm-1 col-md-1 col-lg-1">Codigo</th>
-                        <td class="col-sm-2 col-md-2 col-lg-1">Nombre</td>
-                        <td class="col-sm-2 col-md-2 col-lg-1">Categoria</td>
-                        <td class="col-sm-5 col-md-5 col-lg-3">Descripcion</td>
-                        <td class="col-sm-1 col-md-1 col-lg-1">Publicado</td>
-                        <td class="col-sm-1 col-md-1 col-lg-1">Opciones</td>
-                        <td class="col-sm-12 col-md-12 col-lg-4">Imagen</td> -->
-                    </tr>
+                    <!-- Tabla juegos generada dinamicamente -->
                 </tbody>
             </table>
         </div>
