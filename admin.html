@@ -46,8 +46,14 @@
                                     <input type="text" name="gameCategory" id="gameCategory" />
                                     <label for="gameDescription">Descripción</label>
                                     <textarea name="gameDescription" id="gameDescription" rows="6" cols="50"></textarea>
-                                    <label for="gamePublished">Publicado</label>
-                                    <input type="checkbox" name="gamePublished" id="gamePublished" />
+                                    <div class="form-check form-switch pt-2">
+                                        <input class="form-check-input" type="checkbox" name="gamePublished" id="gamePublished" />
+                                        <label class="form-check-label" for="gamePublished">Publicado</label>
+                                    </div>
+                                    <div class="form-check form-switch pt-2 pb-2">
+                                        <input class="form-check-input" type="checkbox" name="gameOutstanding" id="gameOutstanding" />
+                                        <label class="form-check-label" for="gameOutstanding">Destacado</label>   
+                                    </div>
                                     <label for="gameImageURL">URL Imagen</label>
                                     <input type="url" name="gameImageURL" id="gameImageURL" />
                                 </form>

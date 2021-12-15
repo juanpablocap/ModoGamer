@@ -10,9 +10,10 @@ tr {
 img{
     width: 70%;
 }
-button{
-    box-shadow: none;
-    outline: none;
+button:focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 .tableOpacity{
@@ -24,7 +25,8 @@ button{
     color: white;
 }
 .paddingTr{
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .imgJuego{
     border-radius: 25%;
@@ -45,7 +47,7 @@ button{
     color: black;
     opacity: 100%;
     position: relative;
-    transition: 500ms;
+    transition: 300ms;
     transform: rotate(6deg) scale(1.4);
 }
 
