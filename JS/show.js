@@ -16,7 +16,7 @@ function publicados() {
       }
       data.id = game.id;
       data.innerHTML = `
-            <a href="/details.html#${game.id}">
+            <a href="/gamedetails.html#${game.id}">
             <img src="img/games/${game.image}" alt="${game.id}" id="${game.id}"></a>
             <h3>${game.name}</h3>
             <p>${limite}</p>
@@ -32,7 +32,7 @@ publicados();
 
 function redirigir(event) {
   let padre = event.target.parentElement.id;
-  window.location.assign(window.location.origin + `details.html#${game.id}`);
+  window.location.assign(window.location.origin + `gamedetails.html#${game.id}`);
 }
 
 function agregarCarrito(event) {
