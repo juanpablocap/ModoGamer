@@ -1,6 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ruda:wght@700&display=swap');
 body{
     margin: 0;
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   
+    
+    
+    
 }
+#touch{
+    font-family: 'Ruda', sans-serif;
+    font-weight: 600;
+
+    
+}
+
 .container{
     
     margin-top: 5vh;
@@ -47,8 +64,9 @@ h2:hover{
 }
 p{
     font-size: 0.9em;
+    font-family: 'Ruda' sans-serif;
 }
-
+.arrows{color: #64f8f8 !important}
 @media (max-width: 425px) {
     h1{
         font-size: 3em;

@@ -107,9 +107,9 @@
          </p>
        </div>
        <div class="header-button">
-         <button  class="purchase-button btn btn-primary">
+         <a href="http://127.0.0.1:5500/404.html" role="button" class="purchase-button btn btn-primary">
            Obtener juego
-         </button>
+         </a>
        </div>
      </div>
    </div>

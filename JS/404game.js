@@ -1,7 +1,8 @@
 //Comenzamos llamando todas las variables necesarias
 let canvas = document.getElementById("game404");
 let container = document.getElementById("touch");
-
+let die =   new Audio ('./img/pacman-dies.mp3');
+let music = new Audio ('./img/mario-bross-remix-guitarra-.mp3')
 //vamos creando las que utilizaremos para ir dibujando sobre canvas
 //generales y pelota
 let ctx = canvas.getContext("2d");
@@ -121,6 +122,7 @@ function collisionDetect() {
 }
 //Funcion principal, que debera ser llamada  para que comienze el juego.
 function draw() {
+  music.play();
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBall();
   drawPaddle();
@@ -155,6 +157,7 @@ function gameOver() {
   let fat = document.querySelector(".container");
   fat.appendChild(over);
   clearInterval(inter);
+  die.play();
 }
 
 function gameWon() {

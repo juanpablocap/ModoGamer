@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ruda&display=swap');
+
+
+
 body{
     margin: 0;
     background-image: url(../img/back2.jpg);
+    font-family: 'Righteous' , cursive;
 }
+p{font-family: 'Ruda', sans-serif;
+}
+
 ul{
     list-style: none;
 }
