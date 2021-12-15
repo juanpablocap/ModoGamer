@@ -79,7 +79,7 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
 }
 .showcase {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: url("../img/halo.jpeg") no-repeat center center/cover; /*o carrusel*/
     opacity: .9; 
     border-radius: 2%;
@@ -100,7 +100,7 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
 
 /*news cards*/
 .news-cards {
-    color: rgb(160, 155, 155);
+    color: rgb(250, 248, 248);
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 27px;
@@ -201,8 +201,28 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
     padding: 20px 0;
 }
 
+/* carrito css */
+.img-cart {
+    display: block;
+    max-width: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+table tr td{
+    border:1px solid #FFFFFF;    
+}
 
-@media (max-width: 750px) {  /*modificamos para pantallas mas chicas 700pxs */
+table tr th {
+    background:#eee;    
+}
+
+.panel-shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+}
+
+
+@media (max-width: 850px) {  /*modificamos para pantallas mas chicas 700pxs */
     .menu-btn {
         display: block;
     }
@@ -211,7 +231,7 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
         position: absolute;
         top: 0;
         left: 0;
-        background: grey;
+        background: rgb(110, 110, 110);
         height: 100%;
         padding: 30px;
         opacity: .9;
