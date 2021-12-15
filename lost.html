@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recupera tu contraseña</title>
+    <link rel="stylesheet" href="registro.css">
+    <title>Document</title>
 </head>
 <body>
-Pagina para recuperar la contraseña!<!--habria que hacer un form con ingresa nueva pass y esas cosas-->
+    <img src="./images/fondo4.jpg">
+    <section>
+        <div class="box">
+            <div class="container">
+                <div class="form">
+                    <h2>RECUPERA TU CONTRASEÑA</h2>
+                    <form class="recovery_form" onsubmit="mailRecovery(event)"> >
+                        <div class="inputBox">
+                            <input class="recovery_name" type="text" placeholder="Nombre Completo">
+                        </div>
+                        <div class="inputBox">
+                            <input class="recovery_email" type="email" placeholder="Dirección de Correo Electrónico">
+                        </div>
+                        
+                        
+                        <div class="inputBox">
+                            <input type="submit" value="CONTINUAR">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./JS/MAIL.JS"></script>
 </body>
 </html>

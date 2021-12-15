@@ -14,17 +14,17 @@
             <div class="container">
                 <div class="form">
                     <h2>REGISTRATE</h2>
-                    <form>
+                    <form class="register_form" onsubmit="mailRegister(event)"> >
                         <div class="inputBox">
-                            <input type="text" placeholder="Nombre Completo">
+                            <input class="register_name" type="text" placeholder="Nombre Completo">
                         </div>
                         <div class="inputBox">
-                            <input type="email" placeholder="Dirección de Correo Electrónico">
+                            <input class="register_email" type="email" placeholder="Dirección de Correo Electrónico">
                         </div>
                         <div class="inputBox">
                             <input type="password" placeholder="Contraseña">
                         </div>
-                        <P>Estoy de Acuerdo con Términos y Condiciones</p>
+                        <P><input type="checkbox" name="" id="chek">Estoy de Acuerdo con Términos y Condiciones </p>
                         <div class="inputBox">
                             <input type="submit" value="CONTINUAR">
                         </div>
@@ -33,5 +33,8 @@
             </div>
         </div>
     </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./JS/MAIL.JS"></script>
 </body>
 </html>
