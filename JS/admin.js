@@ -68,40 +68,57 @@ function mostrarJuegosTabla() {
        
         let data = document.createElement("tr");
         data.innerHTML = `
-        <th>${game.id}</th>
-        <td>${game.name}</td>
-        <td>${game.category}</td>
-        <td>${game.description}</td>
-        <td><div>
+        <th class="col-sm-2 col-md-2 col-lg-1">Codigo</th>
+        <td class="col-sm-2 col-md-2 col-lg-1">Nombre</td>
+        <td class="col-sm-3 col-md-3 col-lg-1">Categoria</td>
+        <td class="col-sm-5 col-md-5 col-lg-3">Descripcion</td>
+        <td class="col-sm-1 col-md-1 col-lg-1 trTabla">Publicado</td>
+        <td class="col-sm-1 col-md-1 col-lg-1 trTabla">Opciones</td>
+        <td class="col-sm-12 col-md-12 col-lg-4 trTabla">Imagen</td>
+        <th class="col-sm-2 col-md-2 col-lg-1">${game.id}</th>
+        <td class="col-sm-2 col-md-2 col-lg-1">${game.name}</td>
+        <td class="col-sm-3 col-md-3 col-lg-1">${game.category}</td>
+        <td class="col-sm-5 col-md-5 col-lg-3">${(game.description.length>120) ? game.description.substr(0, 120)+"..." : game.description}</td>
+        <td class="col-sm-2 col-md-2 col-lg-1"><div>
         <button onclick="publicado(${game.id})" id="btnPublicado${game.id}"></button>
         </div></td>
-        <td><section class="d-flex">
-        <div><button onclick="eliminarJuego(${game.id})" class="btn btn-danger m-1"><i class="fas fa-trash-alt"></i></button></div>
-        <div>
-        <button onclick="crearModalMod(${game.id})" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#modalModificar"><i class="fas fa-edit"></i></button>
+        <td class="col-sm-2 col-md-2 col-lg-1">
+        <section class="d-flex flex-column justify-content-center align-items-center btnOpciones">
+        <div class="opacityIMG_Button imgHover">
+        <button onclick="eliminarJuego(${game.id})" class="btn btn-danger m-1"><i class="fas fa-trash-alt"></i></button>
         </div>
-        <div><button onclick="destacarJuego(${game.id})" class="btn btn-warning m-1"><i class="fas fa-medal"></i></button></div>
-        </section></td>
-        <div><img src="../img/games/${game.image}" class="img-thumbnail"></div>
+        <div class="opacityIMG_Button imgHover">
+        <button onclick="datosJuegoMod(${game.id})" class="btn btn-primary m-1" data-bs-toggle="modal" data-bs-target="#adminModal"><i class="fas fa-edit"></i></button>
+        </div>
+        <div class="opacityIMG_Button imgHover">
+        <button onclick="destacarJuego(${game.id})" class="btn btn-warning m-1"><i class="fas fa-medal"></i></button>
+        </div>
+        </section>
+        </td>
+        <td class="col-sm-8 col-md-8 col-lg-4">
+        <div class="opacityIMG_Button">
+        <img src="../IMAGENES/imgGames/${game.image}" class="img-fluid imgJuego">
+        </div>
+        </td>
         `
+        data.className="row paddingTr";
+        //data.style="color: color :hover blueviolet";
         let table = document.querySelector("#cuerpoTabla");
         table.appendChild(data);
         colorPublicado(game.published, game.id);
+        
     });
 }
 
-
-
-function crearModalMod(id){
+function crearModalMod(id) {
 
     let modalModificar = document.createElement("div");
     modalModificar.innerHTML = `
-    <button type="button" data-bs-toggle="modal" data-bs-target="#modalModificar"></button>
     <div class="modal" id="modalModificar" tabindex="-1">   
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h5 class="modal-title">Nuevo Juego</h5>
+                                <h5 class="modal-title">Modificar juego</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -133,24 +150,53 @@ function crearModalMod(id){
 }
 
 function agregarJuego() {
-    let id = localStorage.getItem("games").length + 1;
-    let name = document.getElementById("gameName").value;
-    let category = document.getElementById("gameCategory").value;
-    let description = document.getElementById("gameDescription").value;
-    let published = document.getElementById("gamePublished").checked ? true : false;
-    let image = document.getElementById("gameImageURL").value;
-
-    let newGame = new Game(id, name, category, description, published, image);
 
     let data = localStorage.getItem("games");
     let gamesLS = JSON.parse(data);
+    console.log(document.getElementById("gameID").value);
+    gamesLS.forEach(game => {
+        if(game.id == parseInt(document.getElementById("gameID").value)){
 
-    gamesLS.push(newGame);
+            let name = document.getElementById("gameName").value;
+            let category = document.getElementById("gameCategory").value;
+            let description = document.getElementById("gameDescription").value;
+            let published = document.getElementById("gamePublished").checked ? true : false;
+            let image = document.getElementById("gameImageURL").value;
 
-    data = JSON.stringify(gamesLS);
-    localStorage.setItem("games", data);
+            //console.log(id);
+            console.log(game.id);
 
-    window.location.assign(window.location.origin + "/admin.html");
+            game.name = name;
+            game.category = category;
+            game.description = description;
+            game.published = published;
+            game.image = image;
+
+            data = JSON.stringify(gamesLS);
+            localStorage.setItem("games", data);
+            
+            window.location.assign(window.location.origin + "/admin.html");
+
+        }
+    });
+
+    if(document.getElementById("gameID").value == "ID Autoincremental") {
+        let id = localStorage.getItem("games").length + 1;
+        let name = document.getElementById("gameName").value;
+        let category = document.getElementById("gameCategory").value;
+        let description = document.getElementById("gameDescription").value;
+        let published = document.getElementById("gamePublished").checked ? true : false;
+        let image = document.getElementById("gameImageURL").value;
+
+        let newGame = new Game(id, name, category, description, published, image);
+
+        gamesLS.push(newGame);
+
+        data = JSON.stringify(gamesLS);
+        localStorage.setItem("games", data);
+
+        window.location.assign(window.location.origin + "/admin.html");
+    }
 }
 
 function eliminarJuego(id) {
@@ -179,31 +225,19 @@ function eliminarJuego(id) {
     });
 }
 
-function modificarJuego(id) { 
-    console.log(id);
-    let name = document.getElementById("gameNameMod").value;
-    let category = document.getElementById("gameCategoryMod").value;
-    let description = document.getElementById("gameDescriptionMod").value;
-    let published = document.getElementById("gamePublishedMod").checked ? true : false;
-    let image = document.getElementById("gameImageURLMod").value;
+function datosJuegoMod(id) { 
 
     let data = localStorage.getItem("games");
     let gamesLS = JSON.parse(data);
 
     gamesLS.forEach(game => {
         if(game.id == id){
-            console.log(id);
-            console.log(game.id);
-            game.name = name;
-            game.category = category;
-            game.description = description;
-            game.published = published;
-            game.image = image;
-
-            data = JSON.stringify(gamesLS);
-            localStorage.setItem("games", data);
-
-            //window.location.assign(window.location.origin + "/admin.html");
+            document.getElementById('gameID').value = game.id;
+            document.getElementById('gameName').value = game.name;
+            document.getElementById('gameCategory').value = game.category;
+            document.getElementById('gameDescription').value = game.description;
+            document.getElementById('gamePublished').checked = game.published;
+            document.getElementById('gameImageURL').value = game.image;
         }
     });
 }
@@ -257,13 +291,28 @@ function publicado(id) {
     });   
 }
 
-function colorPublicado(color, id) {
+function colorPublicado(colorPublished, id) {
     
-    if (color) {   
+    if (colorPublished) {   
         let btnP = document.getElementById("btnPublicado"+id);
         btnP.className = "btn btn-primary";
     } else {
         let btnP = document.getElementById("btnPublicado"+id);
         btnP.className = "btn btn-danger";
     } 
+}
+
+function limpiarCamposModal (){
+    document.getElementById("gameID").value = "ID Autoincremental";
+    document.getElementById("gameName").value = "";
+    document.getElementById("gameCategory").value = "";
+    document.getElementById("gameDescription").value = "";
+    document.getElementById("gamePublished").checked = false;
+    document.getElementById("gameImageURL").value = "";
+}
+
+function limitarCaracteres(){
+    if(game.description.length > 120){
+        limite = game.description.substr(0, 120)+"...";
+     }
 }
