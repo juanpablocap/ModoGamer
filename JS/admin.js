@@ -28,11 +28,9 @@ class Game {
         this.h2 = h2;
         this.h3 = h3;
         this.distri = distri;
-        this.studio =studio;
+        this.studio = studio;
         this.date = date;
         this.link = link;
-
-  
         this.outstanding = outstanding
     }
   };
@@ -44,7 +42,7 @@ class Game {
         "Estrategia",
         "Uno de los juegos de estrategia en tiempo real más queridos vuelve a demostrar todo su esplendor con Age of Empires IV, donde serás la estrella de las épicas batallas históricas que moldearon el mundo que hoy conocemos.",
         false,
-        "..img/agelogo.png",
+        "age_of_empire_IV.png",
         "./img/agelogo.png",
         "./img/ageback.png",
         "./img/age1.jpg",
@@ -67,10 +65,7 @@ class Game {
         "steam",
         "relic",
         "28 de octubre de 2021",
-        "https://www.ageofempires.com/",
-
-        
-        
+        "https://www.ageofempires.com/",    
         false
     ),
     new Game(
@@ -79,7 +74,7 @@ class Game {
         "Mundo abierto",
         "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es una historia épica sobre el honor y la lealtad en el umbral de una nueva era. Incluye Red Dead Redemption 2: Modo Historia y Red Dead Online.",
         true,
-        "",
+        "red_dead_redemption_II.jpg",
         "./img/redlogo.png",
         "./img/redback.jpg",
         "./img/red1.jpg",
@@ -103,8 +98,6 @@ class Game {
         "rockstargames",
         "5 de Noviembre de 2019",
         "https://www.rockstargames.com/es/games/reddeadredemption2",
-        
-        
         false
     ),
     new Game(
@@ -113,7 +106,7 @@ class Game {
         "Simulacion",
         "Ponte en la piel de un granjero de hoy en día y construye tu granja en tres entornos americanos y europeos. Farming Simulator 22 ofrece una gran variedad de elementos y se centra en la agricultura, la cría de animales y la silvicultura. Ahora, además, ¡se han añadido los ciclos por estaciones!",
         true,
-        "",
+        "farming_simulator_22.jfif",
         "./img/farlogo.png",
         "./img/farback.jpg",
         "./img/far1.jpg",
@@ -137,8 +130,6 @@ class Game {
         "giants-software",
         "22 de Noviembre de 2021",
         "https://farming-simulator.com/about.php",
-        
-        
         false
     ),
     new Game(
@@ -147,7 +138,7 @@ class Game {
         "Mundo abierto",
         "Te damos la bienvenida a Yara, un paraíso tropical que se ha detenido en el tiempo. El dictador de Yara, Antón Castillo, está decidido a devolver a su nación la antigua gloria perdida por cualquier medio, y su hijo Diego sigue sus sangrientos pasos. La opresión a la que someten a su pueblo ha dado pie a una revolución.",
         true,
-        "",
+        "far_cry_6.jpg",
         "./img/crylogo.png",
         "./img/cryback.jpg",
         "./img/cry1.jpg",
@@ -171,8 +162,6 @@ class Game {
         "ubisoft",
         "7 de Octubre de 2021",
         "https://www.ubisoft.com/es-mx/game/far-cry/far-cry-6",
-        
-        
         false
     ),
     new Game(
@@ -181,7 +170,7 @@ class Game {
         "Acción",
         "Kratos y Atreus se embarcan en una mítica aventura en busca de respuestas y aliados antes de la llegada del Ragnarök.",
         false,
-        "",
+        "god_of_war_ragnarok.jpg",
         "./img/godlogo.png",
         "./img/godback.jpg",
         "./img/god1.jpg",
@@ -208,15 +197,12 @@ class Game {
         false
     ),
     new Game(
-        6,
-        
-    "Fifa 22",
-    "Deportes",
-    `Powered by Football™, EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos
-
-    EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos. Las innovaciones en las mecánicas de juego de FIFA 22 ofrecen un comportamiento más`,
+        6, 
+        "Fifa 22",
+        "Deportes",
+        "Powered by Football™, EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos. Las innovaciones en las mecánicas de juego de FIFA 22 ofrecen un comportamiento más",
         false,
-        "",
+        "fifa.jpg",
         "./img/fifalogo.png",
         "./img/fifaback.jpg",
         "./img/fifa1.jpg",
@@ -248,7 +234,7 @@ class Game {
         "Shooter",
         "Adáptate y sobrevive en un mundo transformado por el desorden. Battlefield™ 2042 es un shooter en primera persona que marca el regreso a la emblemática guerra total de la franquicia. En un mundo en un futuro cercano transformado por el desorden, adáptate y sobrevive con la ayuda de tu patrulla y un arsenal de vanguardia en campos de batalla en constante cambio.",
         true,
-        "",
+        "battlefield_2042.jfif",
         "./img/batlogo.png",
         "./img/batback.jpg",
         "./img/bat1.jpg",
@@ -280,7 +266,7 @@ class Game {
         "Simulacion",
         "Da rienda suelta a tu imaginación y crea un mundo de Sims totalmente único. Explora y personaliza todos los detalles, desde tus Sims a sus hogares y mucho más. Elige el aspecto, la personalidad y la ropa de tus Sims. Define cómo van a vivir día a día. Diseña y construye casas increíbles para cada familia y luego decóralas con tus muebles y elementos decorativos favoritos.",
         true,
-        "",
+        "simslogo.png",
         "./img/simslogo.png",
         "./img/simsback.jpg",
         "./img/sims1.jpg",
@@ -312,7 +298,7 @@ class Game {
         "Shooter",
         "Domina con estilo en Apex Legends, un juego gratuito* de acción en primera persona, donde personajes legendarios con poderosas habilidades forman equipos para luchar y lograr fortuna y gloria en los confines de la Frontera.",
         true,
-        "",
+        "apexlogo.png",
         "./img/apexlogo.png",
         "./img/apexback.jpg",
         "./img/apex1.jpg",
@@ -336,7 +322,6 @@ class Game {
         "respawn",
         "4 de Febrero de 2019",
         "https://www.ea.com/es-es/games/apex-legends",
-        
         false
     ),
     
@@ -385,7 +370,7 @@ function mostrarJuegosTabla() {
         </td>
         <td class="col-sm-8 col-md-8 col-lg-4">
         <div class="opacityIMG_Button" >
-        <img src="../IMAGENES/imgGames/${game.image}" class="img-fluid imgJuego" alt="${game.image}">
+        <img src="../img/${game.image}" class="img-fluid imgJuego" alt="${game.image}">
         </div>
         </td>
         `
@@ -555,7 +540,6 @@ function publicado(id) {
                             showConfirmButton: false,
                             timer: 1100
                         });                      
-<<<<<<< HEAD
                     }
                 });
             }
@@ -563,73 +547,6 @@ function publicado(id) {
     });   
 }
 
-function destacado(id) {
-    
-    let gamesLS = getLocalS();
-    
-    gamesLS.forEach((game) => {
-        
-        if (game.id === id) {
-            
-            if (game.outstanding == false) {
-                Swal.fire({
-                    title: "¿Destacar juego?",
-                    showDenyButton: false,
-                    showCancelButton: true,
-                    confirmButtonText: "Guardar",
-                }).then((result) => {
-                    if (result.isConfirmed) {
-
-                        game.outstanding = true;
-                        data = JSON.stringify(gamesLS);
-                        localStorage.setItem("games", data);
-                        let btnD = document.getElementById("outstandingBtn"+id);
-                        btnD.className = "btn btn-warning";
-
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'success',
-                            title: 'Juego destacado',
-                            showConfirmButton: false,
-                            timer: 1100
-                        });         
-                    }
-                });
-            } else {
-                Swal.fire({
-                    title: "¿No destacar?",
-                    showDenyButton: false,
-                    showCancelButton: true,
-                    confirmButtonText: "Guardar",
-                }).then((result) => {
-                    if (result.isConfirmed) {
-
-                        game.outstanding = false;
-                        data = JSON.stringify(gamesLS);
-                        localStorage.setItem("games", data);
-                        let btnD = document.getElementById("outstandingBtn"+id);
-                        btnD.className = "btn btn-secondary";
-
-                        Swal.fire({
-                            position: 'center',
-                            icon: 'warning',
-                            title: 'Juego sin destacar',
-                            showConfirmButton: false,
-                            timer: 1100
-                        });                      
-=======
->>>>>>> 48f69e091770c9e9492f37d7dcd0c5e9d264c884
-                    }
-                });
-            }
-        }
-    });   
-}
-
-<<<<<<< HEAD
-function colorButton(color, id, tipoBoton) {
-    
-=======
 function destacado(id) {
     
     let gamesLS = getLocalS();
@@ -693,7 +610,6 @@ function destacado(id) {
 
 function colorButton(color, id, tipoBoton) {
     
->>>>>>> 48f69e091770c9e9492f37d7dcd0c5e9d264c884
     if (color) {
         let btnC = document.getElementById(tipoBoton+"Btn"+id);
         (tipoBoton == "published")? btnC.className = "btn btn-success" : btnC.className = "btn btn-warning";
