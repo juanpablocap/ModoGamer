@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ruda:wght@700&display=swap');
 *
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ruda', sans-serif;
 }
-
+h2{font-family: 'Righteous', cursive;}
 body{
     overflow: hidden;
 }
@@ -53,7 +53,12 @@ section .color{
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.verify{
+    border: 1px solid rgba(0, 255, 0,)
+}
+.unverified{
+    border: 1px solid rgba(255,0, 0) !important;
+}
 .form{
     position: relative;
     width: 100%;
