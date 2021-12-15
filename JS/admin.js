@@ -1,6 +1,7 @@
 class Game {
     constructor(id, name, category, description, published, image, logo, back, i1, i2, i3,i4, i5, i6 ,i7, v1, b1, b2, b3, t1, t2, t3, h1, h2, h3, distri, studio, date, link, outstanding) {
     
+    constructor(id, name, category, description, published, image, outstanding) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -69,6 +70,7 @@ let games = [
         "https://www.ageofempires.com/",
 
         
+        "age_of_empire_IV.png", "age_of_empire_IV.png",
         false
     ),
     new Game(
@@ -102,6 +104,7 @@ let games = [
         "5 de Noviembre de 2019",
         "https://www.rockstargames.com/es/games/reddeadredemption2",
         
+        "red_dead_redemption_II.jpg",
         false
     ),
     new Game(
@@ -135,6 +138,7 @@ let games = [
         "22 de Noviembre de 2021",
         "https://farming-simulator.com/about.php",
         
+        "farming_simulator_22.jfif",
         false
     ),
     new Game(
@@ -168,6 +172,7 @@ let games = [
         "7 de Octubre de 2021",
         "https://www.ubisoft.com/es-mx/game/far-cry/far-cry-6",
         
+        "far_cry_6.jpg",
         false
     ),
     new Game(
@@ -331,6 +336,7 @@ let games = [
         "respawn",
         "4 de Febrero de 2019",
         "https://www.ea.com/es-es/games/apex-legends",
+        "god_of_war_ragnarok.jpg",
         false
     ),
     
@@ -549,6 +555,7 @@ function publicado(id) {
                             showConfirmButton: false,
                             timer: 1100
                         });                      
+<<<<<<< HEAD
                     }
                 });
             }
@@ -556,6 +563,73 @@ function publicado(id) {
     });   
 }
 
+function destacado(id) {
+    
+    let gamesLS = getLocalS();
+    
+    gamesLS.forEach((game) => {
+        
+        if (game.id === id) {
+            
+            if (game.outstanding == false) {
+                Swal.fire({
+                    title: "¿Destacar juego?",
+                    showDenyButton: false,
+                    showCancelButton: true,
+                    confirmButtonText: "Guardar",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+
+                        game.outstanding = true;
+                        data = JSON.stringify(gamesLS);
+                        localStorage.setItem("games", data);
+                        let btnD = document.getElementById("outstandingBtn"+id);
+                        btnD.className = "btn btn-warning";
+
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'success',
+                            title: 'Juego destacado',
+                            showConfirmButton: false,
+                            timer: 1100
+                        });         
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: "¿No destacar?",
+                    showDenyButton: false,
+                    showCancelButton: true,
+                    confirmButtonText: "Guardar",
+                }).then((result) => {
+                    if (result.isConfirmed) {
+
+                        game.outstanding = false;
+                        data = JSON.stringify(gamesLS);
+                        localStorage.setItem("games", data);
+                        let btnD = document.getElementById("outstandingBtn"+id);
+                        btnD.className = "btn btn-secondary";
+
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'warning',
+                            title: 'Juego sin destacar',
+                            showConfirmButton: false,
+                            timer: 1100
+                        });                      
+=======
+>>>>>>> 48f69e091770c9e9492f37d7dcd0c5e9d264c884
+                    }
+                });
+            }
+        }
+    });   
+}
+
+<<<<<<< HEAD
+function colorButton(color, id, tipoBoton) {
+    
+=======
 function destacado(id) {
     
     let gamesLS = getLocalS();
@@ -619,6 +693,7 @@ function destacado(id) {
 
 function colorButton(color, id, tipoBoton) {
     
+>>>>>>> 48f69e091770c9e9492f37d7dcd0c5e9d264c884
     if (color) {
         let btnC = document.getElementById(tipoBoton+"Btn"+id);
         (tipoBoton == "published")? btnC.className = "btn btn-success" : btnC.className = "btn btn-warning";
