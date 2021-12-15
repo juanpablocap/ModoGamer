@@ -1,7 +1,7 @@
 class Game {
     constructor(id, name, category, description, published, image, logo, back, i1, i2, i3,i4, i5, i6 ,i7, v1, b1, b2, b3, t1, t2, t3, h1, h2, h3, distri, studio, date, link, outstanding) {
     
-    constructor(id, name, category, description, published, image, outstanding) {
+    
         this.id = id;
         this.name = name;
         this.category = category;
@@ -35,9 +35,9 @@ class Game {
   
         this.outstanding = outstanding
     }
-  }
+  };
 
-let games = [
+ let games = [
     new Game(
         1,
         "Age of empire IV",
@@ -70,7 +70,7 @@ let games = [
         "https://www.ageofempires.com/",
 
         
-        "age_of_empire_IV.png", "age_of_empire_IV.png",
+        
         false
     ),
     new Game(
@@ -104,7 +104,7 @@ let games = [
         "5 de Noviembre de 2019",
         "https://www.rockstargames.com/es/games/reddeadredemption2",
         
-        "red_dead_redemption_II.jpg",
+        
         false
     ),
     new Game(
@@ -138,7 +138,7 @@ let games = [
         "22 de Noviembre de 2021",
         "https://farming-simulator.com/about.php",
         
-        "farming_simulator_22.jfif",
+        
         false
     ),
     new Game(
@@ -172,7 +172,7 @@ let games = [
         "7 de Octubre de 2021",
         "https://www.ubisoft.com/es-mx/game/far-cry/far-cry-6",
         
-        "far_cry_6.jpg",
+        
         false
     ),
     new Game(
@@ -336,7 +336,7 @@ let games = [
         "respawn",
         "4 de Febrero de 2019",
         "https://www.ea.com/es-es/games/apex-legends",
-        "god_of_war_ragnarok.jpg",
+        
         false
     ),
     
