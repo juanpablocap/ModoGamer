@@ -1,17 +1,18 @@
-* {
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background: #E5E5E5;
+	background-image: url(/ModoGamer/IMAGENES/LOGO/fondo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Poppins', sans-serif;
 }
 
 main {
-	max-width: 800px;
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 }
 
 textarea {
@@ -20,6 +21,8 @@ textarea {
 }
 
 .formulario {
+	background: rgba(255, 255, 255, 0.3);
+	padding: 0.5em;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	gap: 20px;
@@ -184,6 +187,8 @@ textarea {
 @media screen and (min-width: 768px) {
 	.formulario {
 		grid-template-columns: 1fr;
+		width: 40em;
+		margin: 0 auto;
 	}
 
 	.formulario__grupo-terminos, 
@@ -200,6 +205,8 @@ textarea {
 @media screen and (min-width: 1024px){
 	.formulario {
 		grid-template-columns: repeat(2, 1fr);
+		margin: 0 auto;
+		width: 50em;
 	}
 
 	#grupo__comentario {
