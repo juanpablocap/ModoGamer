@@ -19,12 +19,12 @@
     <header></header>
     <main>
         <div>
-            <section class="d-flex flex-row d-flex justify-content-around">
+            <section class="d-flex justify-content-around container">
                 <div class="m-3">
-                    <h2 class="text-white">Admin de productos</h2>
+                    <h2 class="p-4 efectoTitulo titulo">Admin de productos</h2>
                 </div>
-                <div class="m-3">
-                    <button onclick="limpiarCamposModal()" onblur data-bs-toggle="modal" data-bs-target="#adminModal" class="btn btnNuevo">Nuevo</button>
+                <div class="m-3 d-flex align-items-center">
+                    <button onclick="limpiarCamposModal()" onblur data-bs-toggle="modal" data-bs-target="#adminModal" class="btn btnNuevo mt-2 btnNewGame">Nuevo JUEGO</button>
                 </div>
             </section>
             <section>
@@ -51,11 +51,11 @@
                                         <label class="form-check-label" for="gamePublished">Publicado</label>
                                     </div>
                                     <div class="form-check form-switch pt-2 pb-2">
-                                        <input class="form-check-input" type="checkbox" name="gameOutstanding" id="gameOutstanding" />
+                                        <input class="form-check-input" type="checkbox" name="gameOutstanding" id="gameOutstanding"/>
                                         <label class="form-check-label" for="gameOutstanding">Destacado</label>   
                                     </div>
                                     <label for="gameImageURL">URL Imagen</label>
-                                    <input type="url" name="gameImageURL" id="gameImageURL" />
+                                    <input type="url" name="gameImageURL" id="gameImageURL" placeholder="nombreImagen.extension"/>
                                 </form>
                             </div>
                             <div class="modal-footer">
@@ -73,7 +73,7 @@
         </div>
 
             <table class="table text-center container tableOpacity" id="tablaAdminJuegos">
-                <tbody id="cuerpoTabla" class="container tablaColorText">
+                <tbody id="cuerpoTabla" class="container">
                     <!-- Tabla juegos generada dinamicamente -->
                 </tbody>
             </table>

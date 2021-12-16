@@ -342,12 +342,13 @@ function mostrarJuegosTabla() {
         
         data.innerHTML = `
         <th class="col-sm-2 col-md-2 col-lg-1">Codigo</th>
-        <td class="col-sm-2 col-md-2 col-lg-1">Nombre</td>
-        <td class="col-sm-3 col-md-3 col-lg-1">Categoria</td>
-        <td class="col-sm-5 col-md-5 col-lg-3">Descripcion</td>
-        <td class="col-sm-1 col-md-1 col-lg-1 trTabla">Publicado</td>
-        <td class="col-sm-1 col-md-1 col-lg-1 trTabla">Opciones</td>
-        <td class="col-sm-12 col-md-12 col-lg-4 trTabla">Imagen</td>
+        <td class="col-sm-2 col-md-2 col-lg-1 trTablaSmall">Nombre</td>
+        <td class="col-sm-3 col-md-3 col-lg-1 trTablaSmall">Categoria</td>
+        <td class="col-sm-5 col-md-5 col-lg-3 trTablaSmall">Descripcion</td>
+        <td class="col-sm-1 col-md-1 col-lg-1 trTablaMedium">Publicado</td>
+        <td class="col-sm-1 col-md-1 col-lg-1 trTablaMedium">Opciones</td>
+        <td class="col-sm-12 col-md-12 col-lg-4 trTablaMedium">Imagen</td>
+       
         <th class="col-sm-2 col-md-2 col-lg-1">${game.id}</th>
         <td class="col-sm-2 col-md-2 col-lg-1">${game.name}</td>
         <td class="col-sm-3 col-md-3 col-lg-1">${game.category}</td>
@@ -374,8 +375,7 @@ function mostrarJuegosTabla() {
         </div>
         </td>
         `
-        data.className="row paddingTr";
-        //data.style="color: color :hover blueviolet";
+        data.className="row paddingTr tablaColorText";
         let table = document.querySelector("#cuerpoTabla");
         table.appendChild(data);
         colorButton(game.published, game.id, "published");
@@ -418,7 +418,7 @@ function agregarJuego() {
     });
 
     if(document.getElementById("gameID").value == "ID Autoincremental") {
-        let id = localStorage.getItem("games").length + 1;
+        let id = idAutoincremetal();
         let name = document.getElementById("gameName").value;
         let category = document.getElementById("gameCategory").value;
         let description = document.getElementById("gameDescription").value;
@@ -454,15 +454,15 @@ function eliminarJuego(id) {
                     gamesLS.splice(cont, 1);
                     data = JSON.stringify(gamesLS);
                     localStorage.setItem("games", data);
-                    Swal.fire({
+                    /* Swal.fire({
                         position: 'center',
                         icon: 'success',
                         title: 'Juego eliminado',
                         showConfirmButton: false,
                         timer: 1100
-                    });    
+                    });   */  
                 }
-                //window.location.assign(window.location.origin + "/admin.html");
+                window.location.assign(window.location.origin + "/admin.html");
             });
                      
         }
@@ -612,7 +612,7 @@ function colorButton(color, id, tipoBoton) {
     
     if (color) {
         let btnC = document.getElementById(tipoBoton+"Btn"+id);
-        (tipoBoton == "published")? btnC.className = "btn btn-success" : btnC.className = "btn btn-warning";
+        (tipoBoton == "published")? btnC.className = "btn colorPublicado" : btnC.className = "btn btn-warning";
     } else {
         let btnC = document.getElementById(tipoBoton+"Btn"+id);
         (tipoBoton == "published")? btnC.className = "btn btn-danger" : btnC.className = "btn btn-secondary";
@@ -633,4 +633,13 @@ function getLocalS(){
     let games = localStorage.getItem("games");
     let gamesLS = JSON.parse(games);
     return gamesLS;
+}
+
+function idAutoincremetal(){
+    let gamesLS = getLocalS();
+    gamesLS.forEach(game, id => {
+       if(id+1 != game.id){
+           return id+1;
+       }
+    });
 }
