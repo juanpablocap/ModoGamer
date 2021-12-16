@@ -63,7 +63,7 @@ header{
 /*BANNER*/
 
 body{
-    background-image: url(./images/fondo2.jpg);
+    background-image: url(../img/fondo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
