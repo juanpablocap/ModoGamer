@@ -13,11 +13,23 @@ body{
 }
 #touch{
     font-family: 'Ruda', sans-serif;
-    font-weight: 600;
-
+    font-weight: 600;  
+}
+.btn{
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    margin: 1em 0;
+    font-family: 'Righteous', cursive;
+    padding: 0.5em 1.7em;
+    border-radius: 35px;
+}
+.btn:hover,
+.btn:focus{
+    background-color:#d94787;
+    color: #4fc7c6;
     
 }
-
 .container{
     
     margin-top: 5vh;
