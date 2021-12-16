@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <img class="logo" src="./images/logo4.png">
+        <img class="logo" src="./img/logo4.png">
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">
             &#8801
@@ -43,19 +43,19 @@
             <input type="radio" name="slider" id="s5">
 
             <label for="s1" id="slide1">
-                <img src="./images/game6.jpg" height="100%" width="100%">
+                <img src="./img/game6.jpg" height="100%" width="100%">
             </label>
             <label for="s2" id="slide2">
-                <img src="./images/game2.jpg.jpg" height="100%" width="100%">
+                <img src="./img/game2.jpg.jpg" height="100%" width="100%">
             </label>
             <label for="s3" id="slide3">
-                <img src="./images/game8.jpg" height="100%" width="100%">
+                <img src="./img/game8.jpg" height="100%" width="100%">
             </label>
             <label for="s4" id="slide4">
-                <img src="./images/game7.jpg" height="100%" width="100%">
+                <img src="./img/game7.jpg" height="100%" width="100%">
             </label>
             <label for="s5" id="slide5">
-                <img src="./images/game5.jpg" height="100%" width="100%">
+                <img src="./img/game5.jpg" height="100%" width="100%">
             </label>
         </div>
     </section>
@@ -64,7 +64,7 @@
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="./images/logotipo.png" alt="logo de modo gamer">
+                        <img src="./img/logotipo.png" alt="logo de modo gamer">
                     </a>
                 </figure>
             </div>
@@ -93,12 +93,12 @@
             
             <div class="modal-textos">
                 <h2>INICIAR SESION</h2>
-                <form>
+                <form onsubmit="loginCheck(event)">
                     <div class="inputBox">
-                        <input type="text" placeholder="Usuario">
+                        <input type="email" placeholder="Email" id="email" required>
                     </div>
                     <div class="inputBox">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" name= "pass" id="pass" placeholder="Contraseña" required>
                     </div>
                     <div class="inputBox botton">
                         <input type="submit" value="Iniciar Sesion">
@@ -108,7 +108,8 @@
             </div>
         </div>
     </div>
-    <script src="./main.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

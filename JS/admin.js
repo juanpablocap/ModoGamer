@@ -43,19 +43,19 @@ class Game {
         "Uno de los juegos de estrategia en tiempo real más queridos vuelve a demostrar todo su esplendor con Age of Empires IV, donde serás la estrella de las épicas batallas históricas que moldearon el mundo que hoy conocemos.",
         false,
         "age_of_empire_IV.png",
-        "./img/agelogo.png",
-        "./img/ageback.png",
-        "./img/age1.jpg",
-        "./img/age2.jpg",
-        "./img/age3.jpg",
-        "./img/age4.jpg",
-        "./img/age5.jpg",
-        "./img/age6.jpg",
-        "./img/age7.jpg",
-        "./img/agevideo.mp4",
-        "./img/ageB1.jpg",
-        "./img/ageB2.jpg",
-        "./img/ageB3.jpg",
+        "./img/games/agelogo.png",
+        "./img/games/ageback.png",
+        "./img/games/age1.jpg",
+        "./img/games/age2.jpg",
+        "./img/games/age3.jpg",
+        "./img/games/age4.jpg",
+        "./img/games/age5.jpg",
+        "./img/games/age6.jpg",
+        "./img/games/age7.jpg",
+        "./img/games/agevideo.mp4",
+        "./img/games/ageB1.jpg",
+        "./img/games/ageB2.jpg",
+        "./img/games/ageB3.jpg",
         "Age of Empires 4 da una mayor importancia a los asedios en las batallas más grandes que se han librado jamás en esta veterana serie de Microsoft",
         "Con cuatro campañas históricas y ocho civilizaciones disponibles en su lanzamiento, este nuevo RTS ambientado en la Edad Media presenta grandes novedades con respecto a los clásicos de Ensemble Studios",
         "El juego tiene 8 civilizaciones en su lanzamiento, con normandos, chinos, mongoles y sultanato de Delhi como primeros imperios confirmados",
@@ -75,19 +75,19 @@ class Game {
         "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es una historia épica sobre el honor y la lealtad en el umbral de una nueva era. Incluye Red Dead Redemption 2: Modo Historia y Red Dead Online.",
         true,
         "red_dead_redemption_II.jpg",
-        "./img/redlogo.png",
-        "./img/redback.jpg",
-        "./img/red1.jpg",
-        "./img/red2.jpg",
-        "./img/red3.jpg",
-        "./img/red4.jpg",
-        "./img/red5.jpg",
-        "./img/red6.jpg",
-        "./img/red7.jpg",
-        "./img/redvideo.mp4",
-        "./img/redB1.jpg",
-        "./img/redB2.jpg",
-        "./img/redB3.jpg",
+        "./img/games/redlogo.png",
+        "./img/games/redback.jpg",
+        "./img/games/red1.jpg",
+        "./img/games/red2.jpg",
+        "./img/games/red3.jpg",
+        "./img/games/red4.jpg",
+        "./img/games/red5.jpg",
+        "./img/games/red6.jpg",
+        "./img/games/red7.jpg",
+        "./img/games/redvideo.mp4",
+        "./img/games/redB1.jpg",
+        "./img/games/redB2.jpg",
+        "./img/games/redB3.jpg",
         "Persigue a fugitivos; caza, pesca y comercia; busca tesoros exóticos; monta tu propia destilería de licor ilegal; o hazte Naturalista para aprender los secretos del reino animal y mucho más en un mundo increíblemente profundo y detallado.",
         "Adéntrate en el dinámico mundo en constante evolución de Red Dead Online y descubre la vida en la frontera americana. Persigue a fugitivos, enfréntate a bandas de forajidos y a otros jugadores",
         "Mientras las divisiones internas aumentan y amenazan con separarlos a todos, Arthur deberá elegir entre sus propios ideales y la lealtad a la banda que lo vio crecer.",
@@ -107,19 +107,19 @@ class Game {
         "Ponte en la piel de un granjero de hoy en día y construye tu granja en tres entornos americanos y europeos. Farming Simulator 22 ofrece una gran variedad de elementos y se centra en la agricultura, la cría de animales y la silvicultura. Ahora, además, ¡se han añadido los ciclos por estaciones!",
         true,
         "farming_simulator_22.jfif",
-        "./img/farlogo.png",
-        "./img/farback.jpg",
-        "./img/far1.jpg",
-        "./img/far2.jpg",
-        "./img/far3.jpg",
-        "./img/far4.jpg",
-        "./img/far5.jpg",
-        "./img/far6.jpg",
-        "./img/far7.jpg",
-        "./img/farvideo.mp4",
-        "./img/farB1.jpg",
-        "./img/farB2.jpg",
-        "./img/farB3.jpg",
+        "./img/games/farlogo.png",
+        "./img/games/farback.jpg",
+        "./img/games/far1.jpg",
+        "./img/games/far2.jpg",
+        "./img/games/far3.jpg",
+        "./img/games/far4.jpg",
+        "./img/games/far5.jpg",
+        "./img/games/far6.jpg",
+        "./img/games/far7.jpg",
+        "./img/games/farvideo.mp4",
+        "./img/games/farB1.jpg",
+        "./img/games/farB2.jpg",
+        "./img/games/farB3.jpg",
         "Arranca motores y disfruta del sonido de la tradición agrícola europea. Con el Zetor Z-25 K labrarás los campos con un motor diésel bicilíndrico de cuatro tiempos de otra época.",
         "¡El paquete de pedidos anticipado definitivo! Pero si ya hizo un pedido anticipado de Farming Simulator 22 - Pre-Order Bundle, no hay problema, simplemente agregue Farming Simulator 22 - YEAR 1 Season Pass por el mismo precio.",
         "Consigue el Fendt 900 Vario Black Beauty para Farming Simulator 22 y dale un toque de elegancia a tu granja cuando recorras los campos y carreteras.",
@@ -139,19 +139,19 @@ class Game {
         "Te damos la bienvenida a Yara, un paraíso tropical que se ha detenido en el tiempo. El dictador de Yara, Antón Castillo, está decidido a devolver a su nación la antigua gloria perdida por cualquier medio, y su hijo Diego sigue sus sangrientos pasos. La opresión a la que someten a su pueblo ha dado pie a una revolución.",
         true,
         "far_cry_6.jpg",
-        "./img/crylogo.png",
-        "./img/cryback.jpg",
-        "./img/cry1.jpg",
-        "./img/cry2.jpg",
-        "./img/cry3.jpg",
-        "./img/cry4.jpg",
-        "./img/cry5.jpg",
-        "./img/cry6.jpg",
-        "./img/cry7.jpg",
-        "./img/cryvideo.mp4",
-        "./img/cryB1.jpg",
-        "./img/cryB2.jpg",
-        "./img/cryB3.jpg",
+        "./img/games/crylogo.png",
+        "./img/games/cryback.jpg",
+        "./img/games/cry1.jpg",
+        "./img/games/cry2.jpg",
+        "./img/games/cry3.jpg",
+        "./img/games/cry4.jpg",
+        "./img/games/cry5.jpg",
+        "./img/games/cry6.jpg",
+        "./img/games/cry7.jpg",
+        "./img/games/cryvideo.mp4",
+        "./img/games/cryB1.jpg",
+        "./img/games/cryB2.jpg",
+        "./img/games/cryB3.jpg",
         "Mientras Anton Castillo promete restaurar la otrora próspera nación isleña de Yara, está preparando a su hijo, Diego, para que se convierta en el próximo presidente.",
         "Anton planea forjar su paraíso cueste lo que cueste, incluso si esto significa sacrificar a algunos de sus propios ciudadanos.",
         "Después de escapar por poco de las fuerzas del régimen, Dani se unió a Libertad, un grupo heterogéneo de guerrilleros, para liberar a su hogar de las garras de Anton y del régimen corrupto.",
@@ -171,19 +171,19 @@ class Game {
         "Kratos y Atreus se embarcan en una mítica aventura en busca de respuestas y aliados antes de la llegada del Ragnarök.",
         false,
         "god_of_war_ragnarok.jpg",
-        "./img/godlogo.png",
-        "./img/godback.jpg",
-        "./img/god1.jpg",
-        "./img/god2.jpg",
-        "./img/god3.jpg",
-        "./img/god4.jpg",
-        "./img/god5.jpg",
-        "./img/god6.jpg",
-        "./img/god7.jpg",
-        "./img/godvideo.mp4",
-        "./img/godB1.jpg",
-        "./img/godB2.jpg",
-        "./img/godB3.jpg",
+        "./img/games/godlogo.png",
+        "./img/games/godback.jpg",
+        "./img/games/god1.jpg",
+        "./img/games/god2.jpg",
+        "./img/games/god3.jpg",
+        "./img/games/god4.jpg",
+        "./img/games/god5.jpg",
+        "./img/games/god6.jpg",
+        "./img/games/god7.jpg",
+        "./img/games/godvideo.mp4",
+        "./img/games/godB1.jpg",
+        "./img/games/godB2.jpg",
+        "./img/games/godB3.jpg",
         'Atreus busca información que lo ayude a comprender la profecía de "Loki" y el papel que desempeñará en el Ragnarök. Kratos debe decidir entre quedarse atado al miedo de repetir sus errores o librarse del pasado para ser el padre que Atreus necesita.',
         "El hacha Leviatán, las Espadas del Caos y el Escudo de guardián regresan junto con una amplia variedad de nuevas habilidades para Kratos y Atreus",
         "Viaja a increíbles y peligrosos entornos y enfréntate a un montón de diferentes criaturas, monstruos y dioses nórdicos, mientras Kratos y Atreus buscan respuestas y aliados.",
@@ -203,19 +203,19 @@ class Game {
         "Powered by Football™, EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos. Las innovaciones en las mecánicas de juego de FIFA 22 ofrecen un comportamiento más",
         false,
         "fifa.jpg",
-        "./img/fifalogo.png",
-        "./img/fifaback.jpg",
-        "./img/fifa1.jpg",
-        "./img/fifa2.jpg",
-        "./img/fifa3.jpg",
-        "./img/fifa4.jpg",
-        "./img/fifa5.jpg",
-        "./img/fifa6.jpg",
-        "./img/fifa7.jpg",
-        "./img/fifavideo.mp4",
-        "./img/fifaB1.jpg",
-        "./img/fifaB2.jpg",
-        "./img/fifaB3.jpg",
+        "./img/games/fifalogo.png",
+        "./img/games/fifaback.jpg",
+        "./img/games/fifa1.jpg",
+        "./img/games/fifa2.jpg",
+        "./img/games/fifa3.jpg",
+        "./img/games/fifa4.jpg",
+        "./img/games/fifa5.jpg",
+        "./img/games/fifa6.jpg",
+        "./img/games/fifa7.jpg",
+        "./img/games/fifavideo.mp4",
+        "./img/games/fifaB1.jpg",
+        "./img/games/fifaB2.jpg",
+        "./img/games/fifaB3.jpg",
         "Con la membresía Pro se recibe la Edición EA Play Pro de FIFA 22, que incluye un artículo de Héroes de FUT, un artículo de jugador Promesas, hasta 4800 FIFA Points y mucho más.",
         "Mejora tu forma de jugar con características más adaptables y detalladas, como la reprogramación de porteros, las físicas del balón, el sprint explosivo y las nuevas tácticas de ataque.",
         "Crea un club en el modo Carrera y llévalo desde los puestos de descenso hasta lo más alto de la competición.",
@@ -235,19 +235,19 @@ class Game {
         "Adáptate y sobrevive en un mundo transformado por el desorden. Battlefield™ 2042 es un shooter en primera persona que marca el regreso a la emblemática guerra total de la franquicia. En un mundo en un futuro cercano transformado por el desorden, adáptate y sobrevive con la ayuda de tu patrulla y un arsenal de vanguardia en campos de batalla en constante cambio.",
         true,
         "battlefield_2042.jfif",
-        "./img/batlogo.png",
-        "./img/batback.jpg",
-        "./img/bat1.jpg",
-        "./img/bat2.jpg",
-        "./img/bat3.jpg",
-        "./img/bat4.jpg",
-        "./img/bat5.jpg",
-        "./img/bat6.jpg",
-        "./img/bat7.jpg",
-        "./img/batvideo.mp4",
-        "./img/batB1.jpg",
-        "./img/batB2.jpg",
-        "./img/batB3.jpg",
+        "./img/games/batlogo.png",
+        "./img/games/batback.jpg",
+        "./img/games/bat1.jpg",
+        "./img/games/bat2.jpg",
+        "./img/games/bat3.jpg",
+        "./img/games/bat4.jpg",
+        "./img/games/bat5.jpg",
+        "./img/games/bat6.jpg",
+        "./img/games/bat7.jpg",
+        "./img/games/batvideo.mp4",
+        "./img/games/batB1.jpg",
+        "./img/games/batB2.jpg",
+        "./img/games/batB3.jpg",
         "Mejora tu experiencia en Battlefield 2042 con la Ultimate Edition. Consigue acceso anticipado a partir del 12 de noviembre, objetos estéticos exclusivos, un libro de ilustraciones digital y mucho más.",
         "Despliégate tras las líneas enemigas para extraer información en una experiencia de supervivencia con grandes riesgos. En esta batalla solo tienes una vida, así que haz que cada bala, cada combate y cada decisión cuenten.",
         "Battlefield 2042 presenta 7 mapas enormes con partidas para hasta 128* jugadores. Desde las ciudades de Seúl hasta los desiertos de Egipto, todos los mapas ofrecen una experiencia única centrada en un entorno natural.",
@@ -267,19 +267,19 @@ class Game {
         "Da rienda suelta a tu imaginación y crea un mundo de Sims totalmente único. Explora y personaliza todos los detalles, desde tus Sims a sus hogares y mucho más. Elige el aspecto, la personalidad y la ropa de tus Sims. Define cómo van a vivir día a día. Diseña y construye casas increíbles para cada familia y luego decóralas con tus muebles y elementos decorativos favoritos.",
         true,
         "simslogo.png",
-        "./img/simslogo.png",
-        "./img/simsback.jpg",
-        "./img/sims1.jpg",
-        "./img/sims2.jpg",
-        "./img/sims3.jpg",
-        "./img/sims4.jpg",
-        "./img/sims5.jpg",
-        "./img/sims6.jpg",
-        "./img/sims7.jpg",
-        "./img/simsvideo.mp4",
-        "./img/simsB1.jpg",
-        "./img/simsB2.jpg",
-        "./img/simsB3.jpg",
+        "./img/games/simslogo.png",
+        "./img/games/simsback.jpg",
+        "./img/games/sims1.jpg",
+        "./img/games/sims2.jpg",
+        "./img/games/sims3.jpg",
+        "./img/games/sims4.jpg",
+        "./img/games/sims5.jpg",
+        "./img/games/sims6.jpg",
+        "./img/games/sims7.jpg",
+        "./img/games/simsvideo.mp4",
+        "./img/games/simsB1.jpg",
+        "./img/games/simsB2.jpg",
+        "./img/games/simsB3.jpg",
         "Crea Sims o casas diferentes para cada aspecto de tu personalidad o, simplemente, cambia tu vestuario. Tienes más de una faceta, así que expresa cada peculiaridad de tu identidad con Los Sims 4.",
         "El control de la vida y de los Sims está en tus manos. Personaliza tus Sims únicos, diseña sus casas y llévalos a vivir aventuras salvajes relacionadas con la fama, el romance, las vacaciones y festividades y mucho más.",
         "Conoce a las criaturas de la noche, dirige un restaurante popular o disfruta de un día de spa con aventuras temáticas y divertidas.",
@@ -299,19 +299,19 @@ class Game {
         "Domina con estilo en Apex Legends, un juego gratuito* de acción en primera persona, donde personajes legendarios con poderosas habilidades forman equipos para luchar y lograr fortuna y gloria en los confines de la Frontera.",
         true,
         "apexlogo.png",
-        "./img/apexlogo.png",
-        "./img/apexback.jpg",
-        "./img/apex1.jpg",
-        "./img/apex2.jpg",
-        "./img/apex3.jpg",
-        "./img/apex4.jpg",
-        "./img/apex5.jpg",
-        "./img/apex6.jpg",
-        "./img/apex7.jpg",
-        "./img/apexvideo.mp4",
-        "./img/apexB1.jpg",
-        "./img/apexB2.jpg",
-        "./img/apexB3.jpg",
+        "./img/games/apexlogo.png",
+        "./img/games/apexback.jpg",
+        "./img/games/apex1.jpg",
+        "./img/games/apex2.jpg",
+        "./img/games/apex3.jpg",
+        "./img/games/apex4.jpg",
+        "./img/games/apex5.jpg",
+        "./img/games/apex6.jpg",
+        "./img/games/apex7.jpg",
+        "./img/games/apexvideo.mp4",
+        "./img/games/apexB1.jpg",
+        "./img/games/apexB2.jpg",
+        "./img/games/apexB3.jpg",
         "¡Vuelve el modo Expreso Hibernal! Elige tu equipamiento, entra en Fin del mundo y captura el tren antes que los otros 2 pelotones. Además, desbloquea óbjetos estéticos limitados del evento para sacar los piratas internos de las leyendas.",
         "Apex Legends presenta un nuevo mapa donde no podrás bajar la guardia: una isla tan paradisíaca como peligrosa, atestada de merodeadores salvajes y arañas asesinas.",
         "Encuentra la leyenda cuyas habilidades se adaptan mejor a tu estilo y ayuda a tu pelotón a alzase como campeón.",
@@ -342,12 +342,13 @@ function mostrarJuegosTabla() {
         
         data.innerHTML = `
         <th class="col-sm-2 col-md-2 col-lg-1">Codigo</th>
-        <td class="col-sm-2 col-md-2 col-lg-1">Nombre</td>
-        <td class="col-sm-3 col-md-3 col-lg-1">Categoria</td>
-        <td class="col-sm-5 col-md-5 col-lg-3">Descripcion</td>
-        <td class="col-sm-1 col-md-1 col-lg-1 trTabla">Publicado</td>
-        <td class="col-sm-1 col-md-1 col-lg-1 trTabla">Opciones</td>
-        <td class="col-sm-12 col-md-12 col-lg-4 trTabla">Imagen</td>
+        <td class="col-sm-2 col-md-2 col-lg-1 trTablaSmall">Nombre</td>
+        <td class="col-sm-3 col-md-3 col-lg-1 trTablaSmall">Categoria</td>
+        <td class="col-sm-5 col-md-5 col-lg-3 trTablaSmall">Descripcion</td>
+        <td class="col-sm-1 col-md-1 col-lg-1 trTablaMedium">Publicado</td>
+        <td class="col-sm-1 col-md-1 col-lg-1 trTablaMedium">Opciones</td>
+        <td class="col-sm-12 col-md-12 col-lg-4 trTablaMedium">Imagen</td>
+       
         <th class="col-sm-2 col-md-2 col-lg-1">${game.id}</th>
         <td class="col-sm-2 col-md-2 col-lg-1">${game.name}</td>
         <td class="col-sm-3 col-md-3 col-lg-1">${game.category}</td>
@@ -370,12 +371,11 @@ function mostrarJuegosTabla() {
         </td>
         <td class="col-sm-8 col-md-8 col-lg-4">
         <div class="opacityIMG_Button" >
-        <img src="../img/${game.image}" class="img-fluid imgJuego" alt="${game.image}">
+        <img src="../img/games/${game.image}" class="img-fluid imgJuego" alt="${game.image}">
         </div>
         </td>
         `
-        data.className="row paddingTr";
-        //data.style="color: color :hover blueviolet";
+        data.className="row paddingTr tablaColorText";
         let table = document.querySelector("#cuerpoTabla");
         table.appendChild(data);
         colorButton(game.published, game.id, "published");
@@ -418,7 +418,7 @@ function agregarJuego() {
     });
 
     if(document.getElementById("gameID").value == "ID Autoincremental") {
-        let id = localStorage.getItem("games").length + 1;
+        let id = idAutoincremetal();
         let name = document.getElementById("gameName").value;
         let category = document.getElementById("gameCategory").value;
         let description = document.getElementById("gameDescription").value;
@@ -454,15 +454,15 @@ function eliminarJuego(id) {
                     gamesLS.splice(cont, 1);
                     data = JSON.stringify(gamesLS);
                     localStorage.setItem("games", data);
-                    Swal.fire({
+                    /* Swal.fire({
                         position: 'center',
                         icon: 'success',
                         title: 'Juego eliminado',
                         showConfirmButton: false,
                         timer: 1100
-                    });    
+                    });   */  
                 }
-                //window.location.assign(window.location.origin + "/admin.html");
+                window.location.assign(window.location.origin + "/admin.html");
             });
                      
         }
@@ -612,7 +612,7 @@ function colorButton(color, id, tipoBoton) {
     
     if (color) {
         let btnC = document.getElementById(tipoBoton+"Btn"+id);
-        (tipoBoton == "published")? btnC.className = "btn btn-success" : btnC.className = "btn btn-warning";
+        (tipoBoton == "published")? btnC.className = "btn colorPublicado" : btnC.className = "btn btn-warning";
     } else {
         let btnC = document.getElementById(tipoBoton+"Btn"+id);
         (tipoBoton == "published")? btnC.className = "btn btn-danger" : btnC.className = "btn btn-secondary";
@@ -633,4 +633,13 @@ function getLocalS(){
     let games = localStorage.getItem("games");
     let gamesLS = JSON.parse(games);
     return gamesLS;
+}
+
+function idAutoincremetal(){
+    let gamesLS = getLocalS();
+    gamesLS.forEach(game, id => {
+       if(id+1 != game.id){
+           return id+1;
+       }
+    });
 }
