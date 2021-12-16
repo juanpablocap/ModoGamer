@@ -36,7 +36,6 @@ let logs = localStorage.getItem('log');
 let logLS = JSON.parse(logs);
 
 datalog = document.getElementById("userlog");
-console.log(datalog);
 datalog.innerHTML = `Hola ${logLS.name}`;
 let tab = document.querySelector("userlog");
 tab.appendChild(datalog);
