@@ -1,6 +1,7 @@
 //* SIMULAMOS BASE DE DATOS (USUARIOS)
 class User {
     constructor(name, lastname, email, password, admin) {
+      this.id = id;
       this.name = name;
       this.lastname = lastname;
       this.email = email;
@@ -9,12 +10,14 @@ class User {
     }
   }
   
+  let usersloged = []
+
   let users = [
-    new User('Juan Pablo', 'Capilla', 'juanpablocapilla@gmail.com', '12345678', true),
-    new User('Sofia', 'Muratore', 'sofi@gmail.com', '12345678', false),
-    new User('Juan Ignacio', 'Ramallo', 'waka@gmail.com', '12345678', true),
-    new User('Javier', 'Martinez', 'javier@gmail.com', '12345678',  false),
-    new User('Carlos', 'Mocsary', 'carlosm@gmail.com', '12345678', true)
+    new User('1','Juan Pablo', 'Capilla', 'juanpablocapilla@gmail.com', '12345678', true),
+    new User('2','Sofia', 'Muratore', 'sofi@gmail.com', '12345678', false),
+    new User('3','Juan Ignacio', 'Ramallo', 'waka@gmail.com', '12345678', true),
+    new User('4','Javier', 'Martinez', 'javier@gmail.com', '12345678',  false),
+    new User('5','Carlos', 'Mocsary', 'carlosm@gmail.com', '12345678', true)
   ]
   
   if (!localStorage.getItem('users')) {
@@ -37,9 +40,25 @@ class User {
     // chequeamos si la clave es correcta
     if (userLogged && userLogged.password == pass) {
       //crear una variable para que el usuario logeado pueda navegar y salir despues
-      let logeados = userLogged;
-      let logeadosJSON = JSON.stringify(logeados);
-      localStorage.setItem('log', logeadosJSON);
+      
+
+      if(localStorage.getItem('log')){
+        let newLog = userLogged;
+        //!Traer de local storage
+        let data = localStorage.getItem('log');
+        //! Ponerlo en mi idioma
+        let usersLS = JSON.parse(data);
+        //!Modificar el elemento que trajimos
+        usersLS.push(newLog);
+        //! Poner en el idioma de LS
+        data = JSON.stringify(usersLS);
+        //!Volver a enviarlo a local storage
+        localStorage.setItem('log', data)
+        }else{
+          let logeados = userLogged;
+          let logeadosJSON = JSON.stringify(logeados);
+          localStorage.setItem('log', logeadosJSON);
+      }
 
       window.location.assign(window.location.origin + '/main.html');
       
@@ -70,7 +89,7 @@ class User {
     
   
     if(nameOk && lastnameOk && emailOk && passwordOk){
-      let newUser = new User(name, lastname, email, password);
+      let newUser = new User(id, name, lastname, email, password);
       
       //!Traer de local storage
       let data = localStorage.getItem('users');
@@ -101,5 +120,6 @@ class User {
   // Logout
   function logout() {
     localStorage.removeItem('log');
-    console.log("deslogeando...")
+    console.log("deslogeando...");
+    window.location.assign(window.location.origin + '/index.html');
   }

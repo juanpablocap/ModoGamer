@@ -3,9 +3,6 @@
 let games = localStorage.getItem("games");
 let gamesLS = JSON.parse(games);
 
-
-
-
 function publicados() {
   gamesLS.forEach((game) => {
     if (game.published == true) {
