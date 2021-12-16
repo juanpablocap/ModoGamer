@@ -418,7 +418,7 @@ function agregarJuego() {
     });
 
     if(document.getElementById("gameID").value == "ID Autoincremental") {
-        let id = idAutoincremetal();
+        let id = games.length+1;
         let name = document.getElementById("gameName").value;
         let category = document.getElementById("gameCategory").value;
         let description = document.getElementById("gameDescription").value;
@@ -633,13 +633,4 @@ function getLocalS(){
     let games = localStorage.getItem("games");
     let gamesLS = JSON.parse(games);
     return gamesLS;
-}
-
-function idAutoincremetal(){
-    let gamesLS = getLocalS();
-    gamesLS.forEach(game, id => {
-       if(id+1 != game.id){
-           return id+1;
-       }
-    });
 }
