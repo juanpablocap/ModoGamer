@@ -137,7 +137,7 @@ body{
 }
 
 .modal{
-    background-image: url(../images/modal.jpg);
+    background-image: url(../img/modal.jpg);
     background-size: cover;
     background-position: center;
     width: 45%;
