@@ -80,7 +80,7 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
 .showcase {
     width: 100%;
     height: 600px;
-    background: url("../img/halo.jpeg") no-repeat center center/cover; /*o carrusel*/
+    background: url("../img/games/batB2.jpg") no-repeat center center/cover; /*o carrusel*/
     opacity: .9; 
     border-radius: 2%;
     padding-top: 10px;
@@ -149,7 +149,7 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
     margin-top: 20px;
     width: 100%;
     height: 620px;
-    background: url('img/banner.jpg') no-repeat center center/cover;
+    background: url('img/games/banner.jpg') no-repeat center center/cover;
     margin-bottom: 40px;
 }
 /*redes sociales*/
