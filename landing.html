@@ -93,12 +93,12 @@
             
             <div class="modal-textos">
                 <h2>INICIAR SESION</h2>
-                <form>
+                <form onsubmit="loginCheck(event)">
                     <div class="inputBox">
-                        <input type="text" placeholder="Usuario">
+                        <input type="email" placeholder="Email" id="email" required>
                     </div>
                     <div class="inputBox">
-                        <input type="password" placeholder="Contraseña">
+                        <input type="password" name= "pass" id="pass" placeholder="Contraseña" required>
                     </div>
                     <div class="inputBox botton">
                         <input type="submit" value="Iniciar Sesion">
@@ -108,6 +108,7 @@
             </div>
         </div>
     </div>
+    <script src="js/login.js"></script>
     <script src="js/main.js"></script>
 </body>
 

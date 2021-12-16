@@ -2,14 +2,14 @@
 
 let games = localStorage.getItem("games");
 let gamesLS = JSON.parse(games);
-console.log(gamesLS);
+
+
+
 
 function publicados() {
   gamesLS.forEach((game) => {
     if (game.published == true) {
       let data = document.createElement("div");
-      let largo = game.description.length;
-      console.log(largo);
 
       if (game.description.length > 100) {
         limite = game.description.substr(0, 100) + "...";
@@ -34,6 +34,17 @@ function redirigir(event) {
   let padre = event.target.parentElement.id;
   window.location.assign(window.location.origin + `gamedetails.html#${game.id}`);
 }
+
+let logs = localStorage.getItem('log');
+let logLS = JSON.parse(logs);
+
+datalog = document.getElementById("userlog");
+console.log(datalog);
+datalog.innerHTML = `Hola ${logLS.name}`;
+let tab = document.querySelector("userlog");
+tab.appendChild(datalog);
+
+
 
 function agregarCarrito(event) {
 

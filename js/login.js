@@ -14,14 +14,14 @@ class User {
     new User('Sofia', 'Muratore', 'sofi@gmail.com', '12345678', false),
     new User('Juan Ignacio', 'Ramallo', 'waka@gmail.com', '12345678', true),
     new User('Javier', 'Martinez', 'javier@gmail.com', '12345678',  false),
-    new User('Carlos', 'Mocsary', 'carlosm@gmail.com', '12345678', false)
+    new User('Carlos', 'Mocsary', 'carlosm@gmail.com', '12345678', true)
   ]
   
   if (!localStorage.getItem('users')) {
     let usersJSON = JSON.stringify(users); //Convertimos users a JSON
     localStorage.setItem('users', usersJSON);
   }
-  
+ 
   // LOGIN
   
   function loginCheck(event) {
@@ -29,12 +29,20 @@ class User {
     let email = document.querySelector('#email').value;
     let pass = document.getElementById('pass').value;
     let usersLS = localStorage.getItem('users');
+  
+    
 
-    const usersLSConvertido = JSON.parse(usersLS)
+    const usersLSConvertido = JSON.parse(usersLS);
     let userLogged = usersLSConvertido.find(user => user.email === email);
     // chequeamos si la clave es correcta
     if (userLogged && userLogged.password == pass) {
+      //crear una variable para que el usuario logeado pueda navegar y salir despues
+      let logeados = userLogged;
+      let logeadosJSON = JSON.stringify(logeados);
+      localStorage.setItem('log', logeadosJSON);
+
       window.location.assign(window.location.origin + '/main.html');
+      
     } else {
       let dataError = document.createElement('div');
       dataError.innerText = 'Algun dato no es correcto, intenta de nuevo!';
@@ -43,7 +51,7 @@ class User {
       form.appendChild(dataError);
       setTimeout(function () {
         form.removeChild(dataError);
-      }, 6000);
+      }, 4000);
     }
   }
   
@@ -71,13 +79,14 @@ class User {
       //!Modificar el elemento que trajimos
       usersLS.push(newUser);
       //! Poner en el idioma de LS
-    data = JSON.stringify(usersLS);
-    //!Volver a enviarlo a local storage
-    localStorage.setItem('users', data)
-    //redirigir a la pagina de registro ok! -mandar email y redirigir al main
+      data = JSON.stringify(usersLS);
+      //!Volver a enviarlo a local storage
+      localStorage.setItem('users', data)
+      //redirigir a la pagina de registro ok! -mandar email y redirigir al main
     
     window.location.assign(window.location.origin + '/main.html'); //! usamos window.location.origin para no cambiar de pagina
     }else{
+      console.log(nameOk,lastnameOk,emailOk,passwordOk);
       const error = document.createElement('div');
       error.innerText = 'Hay campos erroneos';
       error.classList.add('alert', 'alert-danger', 'mt-3', 'w-50', 'text-center');
@@ -88,4 +97,9 @@ class User {
       },3000)
     }
   }
-  
+
+  // Logout
+  function logout() {
+    localStorage.removeItem('log');
+    console.log("deslogeando...")
+  }
