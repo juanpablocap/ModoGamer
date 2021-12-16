@@ -118,7 +118,6 @@ class User {
 
   // Logout
   function logout() {
-    
     localStorage.clear('log');
     console.log("deslogeando...");
     window.location.assign(window.location.origin + '/index.html');
