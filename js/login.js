@@ -1,7 +1,6 @@
 //* SIMULAMOS BASE DE DATOS (USUARIOS)
 class User {
-    constructor(id, name, lastname, email, password, admin) {
-      this.id = id;
+    constructor(name, lastname, email, password, admin) {
       this.name = name;
       this.lastname = lastname;
       this.email = email;
@@ -13,11 +12,11 @@ class User {
   let usersloged = []
 
   let users = [
-    new User('1','Juan Pablo', 'Capilla', 'juanpablocapilla@gmail.com', '12345678', true),
-    new User('2','Sofia', 'Muratore', 'sofi@gmail.com', '12345678', false),
-    new User('3','Juan Ignacio', 'Ramallo', 'waka@gmail.com', '12345678', true),
-    new User('4','Javier', 'Martinez', 'javier@gmail.com', '12345678',  false),
-    new User('5','Carlos', 'Mocsary', 'carlosm@gmail.com', '12345678', true)
+    new User('Juan Pablo', 'Capilla', 'juanpablocapilla@gmail.com', '12345678', true),
+    new User('Sofia', 'Muratore', 'sofi@gmail.com', '12345678', false),
+    new User('Juan Ignacio', 'Ramallo', 'waka@gmail.com', '12345678', true),
+    new User('Javier', 'Martinez', 'javier@gmail.com', '12345678',  false),
+    new User('Carlos', 'Mocsary', 'carlosm@gmail.com', '12345678', true)
   ]
   
   if (!localStorage.getItem('users')) {
@@ -48,12 +47,7 @@ class User {
         let data = localStorage.getItem('log');
         //! Ponerlo en mi idioma
         let usersLS = JSON.parse(data);
-        //!Modificar el elemento que trajimos
-        usersLS.push(newLog);
-        //! Poner en el idioma de LS
-        data = JSON.stringify(usersLS);
-        //!Volver a enviarlo a local storage
-        localStorage.setItem('log', data)
+        
         }else{
           let logeados = userLogged;
           let logeadosJSON = JSON.stringify(logeados);
@@ -89,7 +83,7 @@ class User {
     
   
     if(nameOk && lastnameOk && emailOk && passwordOk){
-      let newUser = new User(id, name, lastname, email, password);
+      let newUser = new User(name, lastname, email, password);
       
       //!Traer de local storage
       let data = localStorage.getItem('users');
@@ -103,7 +97,7 @@ class User {
       localStorage.setItem('users', data)
       //redirigir a la pagina de registro ok! -mandar email y redirigir al main
     
-    window.location.assign(window.location.origin + '/main.html'); //! usamos window.location.origin para no cambiar de pagina
+      window.location.assign(window.location.origin + '/main.html'); 
     }else{
       console.log(nameOk,lastnameOk,emailOk,passwordOk);
       const error = document.createElement('div');

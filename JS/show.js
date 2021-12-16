@@ -40,24 +40,3 @@ console.log(datalog);
 datalog.innerHTML = `Hola ${logLS.name}`;
 let tab = document.querySelector("userlog");
 tab.appendChild(datalog);
-
-
-
-function agregarCarrito(event) {
-
-  let carrito; 
-  if (localStorage.getItem("carrito") == null) {
-    carrito = [];
-    console.log("no hay nada");
-  } else {
-    carrito = JSON.parse(localStorage.getItem("carrito"));
-    console.log(carrito);
-  }
-
-  console.log(event.target.parentElement);
-  let idCarrito = event.target.parentElement.id;
-  let game1 = gamesLS.find((juego) => juego.id == idCarrito);
-  console.log(game1);
-  carrito.push(game1);
-  localStorage.setItem("carrito", JSON.stringify(carrito));
-}
