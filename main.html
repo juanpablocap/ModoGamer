@@ -7,6 +7,11 @@
     <meta name="description" content="Proyecto para rollingcode school, website de video juegos.">
     <meta name="keywords" content="games, video juegos, playstation, diversion, xbox, steam, modogamer"/>
     <title>Modo Gamer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- funcion scroll revel-->
@@ -15,103 +20,101 @@
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
-   <!-- navbar -->
-    <button>
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
+  <!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="main.html"><img src="img/logo4.png" alt="logo-modo-gamer"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
+              <li class="nav-item ">
+                <a class="nav-link" href="main.html"><button> Inicio </button></a>
+              </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="admin.html"><button> Admin</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html"><button> Contacto</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.html"><button> Desconectarse</button></a>
+                </li>                                          
+            </ul>
         </div>
-    </button>
-    <div class="container"> 
-        <nav class="nav-main">
-            <a href="main.html"><img src="/img/LOGO/astro2.png" alt="modogamer_logo" class="nav-brand"></a>
-                <ul class="nav-menu">
-                    <li id="userlog"></li>
-                    <li>
-                        <a href="main.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="admin.html">Admin</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About us</a>
-                    </li>
-                    <li><a href="logout.html">Logout</a></li>
-                </ul>
-                <ul class="nav-menu-right"> 
-                    <li>
-                        <i class="fas fa-search"></i> 
-                    </li>
-                </ul>
-                
-        </nav>
-    <!-- fin navbar -->
+    </div>
+</nav>
+<!--Fin NAVBAR-->
+
 
  <!-- show case-->
- <header class="showcase ">
-    <h2>Juego del dia</h2>
-    <p>Halo Wars: Definitive Edition is an enhanced version of the real-time strategy classic, Halo Wars, updated to run natively on PC. Halo Wars: Definitive Edition includes improved graphics, new achievements and all of the DLC created for the landmark real-time strategy game..</p>
-</header>
+ <!-- CARROUSEL -->
+
+ <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/games/counter.jpg" class="d-block w-100" alt="carousel-images">
+      </div>
+      <div class="carousel-item">
+        <img src="img/games/ghost.jpg" class="d-block w-100" alt="carousel-images">
+      </div>
+      <div class="carousel-item">
+        <img src="img/games/fifa.jpg" class="d-block w-100" alt="carousel-images">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
 
 <!-- news cards 1-->
 <div class="news-cards">
 <!-- carga dinamica de juegos-->
 </div>
 
-<!-- Social , los iconos los saca de fontawesome-->
-<section class="social">
-    <p><h4>Seguinos en nuestras redes sociales</h4></p>
-    <br>
-    <div class="links">
-        <a href="http://facebook.com/#">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="http://twitter.com">
-            <i class="fab fa-twitter"></i>
-        </a>
-        <a href="http://instagram.com/#">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="http://linkedln.com/#">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
+<!--Inicio FOOTER-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="main.html">
+                    <img src="img/logotipo.png" alt="logo de modo gamer">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>COMPAÑIA</h2>
+            <a href="about.html">Sobre Nosotros</a>
+            <a href="404.html">Política de Privacidad</a>
+            <a href="404.html">Términos de Uso</a>
+        </div>
+        <div class="box">
+            <h2>SEGUINOS</h2>
+            <div class="red-social">
+                <a href="404.html" class="fa fa-facebook"></a>
+                <a href="404.html" class="fa fa-instagram"></a>
+                <a href="404.html" class="fa fa-twitter"></a>
+            </div>
+        </div>
     </div>
-</section>
-</div>
-<div class="footer-links">
-<div class="footer-container">
-<ul>
-    <li>
-        <a> <h3>Menú</h3></a>
-    </li>
-    <li>
-        <a href="main.html">Home</a>
-    </li>
-    <li>
-        <a href="about.html">About us</a>
-    </li>
-    <li>
-        <a href="contact.html">Contacto</a>
-    </li>
-</ul>
-<ul>
-    <li>
-        <a><h3>Enlaces</h3></a>
-    </li>
-    <li>
-        <a href="location.html">Ubicacion</a>
-    </li>
-    <li>
-        <a href="contact.html">Contacto</a>
-    </li>
-    <li>
-        <a href="index.html">Intrenet</a>
-    </li>
-</ul> 
-</div>
-</div>
-<footer class="footer">
-    <h3>Modogamer &copy Argentina - 2021 // Diseño y desarrollo por Undefined</h3>
+    <div class="grupo-2">
+        <small>&copy; 2021 <b>Modo Gamer</b> - Todos los Derechos Reservados.</small>
+    </div>
 </footer>
+<!--Fin FOOTER-->
 
 <script>
     document.querySelector('.menu-btn').addEventListener('click',() => {
@@ -121,8 +124,11 @@
     ScrollReveal().reveal('.showcase'); 
     ScrollReveal().reveal('.news-cards' ,{ delay: 500}); 
     ScrollReveal().reveal('.cards-banner-one' ,{ delay: 500}); 
-</script>   
-<script src="/js/show.js"></script>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="js/show.js"></script>
 
 
 </body>
