@@ -1,6 +1,6 @@
 * {    /* todo en la pagina tendra esta configuracion */
     box-sizing: border-box;
-    margin: 0;
+    margin: 0; 
     padding: 0;
 } 
 
@@ -11,6 +11,10 @@ body {
     background-image: url("../img/back2.jpg");
     font-size: 15px;
     font-family:  sans-serif;
+}
+
+.carousel-item img {
+    height: 15em;
 }
 
 .titulo {
@@ -100,6 +104,7 @@ hr {  /*espacio entre la linea HR y lo que sigue abajo */
 
 /*news cards*/
 .news-cards {
+    padding: 0 1em;
     color: rgb(250, 248, 248);
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -221,8 +226,12 @@ table tr th {
     box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
 }
 
-
 @media (max-width: 850px) {  /*modificamos para pantallas mas chicas 700pxs */
+    #carousel img{
+        height: 25em;
+    }
+
+
     .menu-btn {
         display: block;
     }
@@ -291,5 +300,17 @@ table tr th {
     }
     .footer-links .footer-container{
         grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #carousel img{
+        height: 35em;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #carousel img{
+        height: 40em;
     }
 }
