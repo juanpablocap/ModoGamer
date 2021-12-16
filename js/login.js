@@ -94,7 +94,7 @@ class User {
       //! Poner en el idioma de LS
       data = JSON.stringify(usersLS);
       //!Volver a enviarlo a local storage
-      localStorage.setItem('users', data)
+      localStorage.setItem('users', data);
       //redirigir a la pagina de registro ok! -mandar email y redirigir al main
     
       window.location.assign(window.location.origin + '/main.html'); 
