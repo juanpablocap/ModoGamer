@@ -1,8 +1,8 @@
 //Comenzamos llamando todas las variables necesarias
 let canvas = document.getElementById("game404");
 let container = document.getElementById("touch");
-let die =   new Audio ('./img/pacman-dies.mp3');
-let music = new Audio ('./img/mario-bross-remix-guitarra-.mp3')
+let die =   new Audio ('./img/games/pacman-dies.mp3');
+let music = new Audio ('./img/games/mario-bross-remix-guitarra-.mp3')
 //vamos creando las que utilizaremos para ir dibujando sobre canvas
 //generales y pelota
 let ctx = canvas.getContext("2d");

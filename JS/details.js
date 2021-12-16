@@ -3,82 +3,7 @@
  let game = games.find(games => games.id == idGame);
  
 
-// let detalle = document.createElement('div');
-// detalle.innerHTML = `
-// <h2>esta esla ID: ${game.id}</h2>
-// <p>El nombre del Juego es: ${game.name}</p>
-// <img src="/img/games/${game.image}" width="400" height= "300">
-// `;
-// let padre = document.getElementById('main');
-// padre.appendChild(detalle);
 
-
-//  class Game {
-//    constructor(id, name, category, description, published, image, logo, back, i1, i2, i3,i4, i5, i6 ,i7, b1, b2, b3) {
-//        this.id = id;
-//        this.name = name;
-//        this.category = category;
-//        this.description = description;
-//        this.published = published;
-//        this.image = image;
-//        this.logo = logo;
-//        this.back = back;
-//        this.i1 = i1;
-//        this.i2 = i2;
-//        this.i3 = i3;
-//        this.i4 = i4;
-//        this.i5 = i5;
-//        this.i6 = i6;
-//        this.i7 = i7;
-//        this.b1 = b1;
-//        this.b2 = b2;
-//        this.b3 = b3;
- 
-//    }
-//  }
-//  let games = [
-//    new Game(
-//        1,
-//        "Age of empire IV",
-//        "Estrategia",
-//        "Uno de los juegos de estrategia en tiempo real más queridos vuelve a demostrar todo su esplendor con Age of Empires IV, donde serás la estrella de las épicas batallas históricas que moldearon el mundo que hoy conocemos.",
-//        false,
-//        "age_of_empire_IV.png"
-//    ),
-//    new Game(
-//        2,
-//        "Red dead redemption II",
-//        "Mundo abierto",
-//        "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es una historia épica sobre el honor y la lealtad en el umbral de una nueva era. Incluye Red Dead Redemption 2: Modo Historia y Red Dead Online.",
-//        true,
-//        "red_dead_redemption_II.jpg"
-//    ),
-//    new Game(
-//      3,
-//      "Fifa 22",
-//      "Deportes",
-//      `Powered by Football™, EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos
- 
-//      EA SPORTS™ FIFA 22 acerca aún más el juego a la realidad gracias a mejoras significativas en la jugabilidad y una nueva temporada de novedades en todos los modos. Las innovaciones en las mecánicas de juego de FIFA 22 ofrecen un comportamiento más`,
-//      true,
-//      "./IMAGENES/fifa/2.jpg",
-//      "./IMAGENES/fifa/logo.png",
-//      "./IMAGENES/fifa/b1.jpg",
-//      "./IMAGENES/fifa/1.jpg",
-//      "./IMAGENES/fifa/2.jpg",
-//      "./IMAGENES/fifa/3.jpg",
-//      "./IMAGENES/fifa/4.jpg",
-//      "./IMAGENES/fifa/5.jpg",
-//      "./IMAGENES/fifa/6.jpg",
-//      "./IMAGENES/fifa/7.jpg",
-//      "./IMAGENES/fifa/b1.jpg",
-//      "./IMAGENES/fifa/b2.jpg",
-//      "./IMAGENES/fifa/b3.jpg",
-   
-//    )
-//     ]
-
-//  console.log(game);
   //! Realizar la funcion para obtener el hash de la card y linjear en el array
  let detailPage = document.querySelector('#main')
  let detailFocus = game
@@ -107,7 +32,7 @@
          </p>
        </div>
        <div class="header-button">
-         <a href="http://127.0.0.1:5500/404.html" role="button" class="purchase-button btn btn-primary">
+         <a href="404.html" role="button" class="purchase-button btn btn-primary">
            Obtener juego
          </a>
        </div>
@@ -340,6 +265,7 @@
  
     
  })
+ 
  
  
  
