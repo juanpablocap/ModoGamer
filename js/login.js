@@ -1,6 +1,6 @@
 //* SIMULAMOS BASE DE DATOS (USUARIOS)
 class User {
-    constructor(name, lastname, email, password, admin) {
+    constructor(id, name, lastname, email, password, admin) {
       this.id = id;
       this.name = name;
       this.lastname = lastname;
